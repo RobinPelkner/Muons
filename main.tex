@@ -1,0 +1,73 @@
+\input{header.tex}
+\setlength\parindent{0pt}
+\begin{document}
+\pagenumbering{gobble}
+\begin{titlepage}
+  \begin{center}
+  {{\Large{\textsc{Alma Mater Studiorum $\cdot$ University of  Bologna}}}} 
+  \rule[0.1cm]{10cm}{0.1mm}
+  \rule[0.5cm]{10cm}{0.6mm}
+  \\\vspace{3mm}
+  \includegraphics[width=0.6\textwidth]{figures/unibo.png}
+  \\ \vspace{3mm}
+  {\small{\textbf{School of Science\\
+  Department of Physics and Astronomy}}}
+  \end{center}
+  
+  \vspace{23mm}
+  
+  \begin{center}\textcolor{black}{
+  {\LARGE{\textbf{Measurement of Muon Lifetime}}}\\
+  }\end{center}
+  
+  \vspace{50mm} \par \noindent
+  
+  \begin{minipage}[t]{0.47\textwidth}
+  {\large{\textbf{Supervisors: }\vspace{2mm}\\\textcolor{black}{
+    Prof. Luigi Guiducci \\
+    Dott. Marco Garbini \\
+    Dott. Federica Primavera\\
+    Dott. Marco Selvi}}}
+  \end{minipage}
+  %
+  \hfill
+  %
+  \begin{minipage}[t]{0.47\textwidth}\raggedleft \textcolor{black}{
+  {\large{\textbf{Submitted by:}
+  \vspace{2mm}\\
+  \textcolor{black}{
+Danish Alam\\
+Robin Pelkner\\
+Daniele Rossi}}}
+  }
+  \end{minipage}
+  \vspace{2mm}
+  \begin{center}
+  Academic Year \textcolor{black}{2021/2022}
+  \end{center}
+  
+  \end{titlepage}
+
+
+
+\thispagestyle{empty}
+\input{content/abstract.tex}
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\pagestyle{headings}
+
+\input{content/introduction.tex}
+\input{content/setup.tex}
+\input{content/preliminary.tex}
+\input{content/trigger_and_data.tex}
+\input{content/data_analysis.tex}
+\input{content/results.tex}
+
+\newpage
+\nocite{*}
+\printbibliography
+\appendix
+\input{content/appendix.tex}
+\end{document}
