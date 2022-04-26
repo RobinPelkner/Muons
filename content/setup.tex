@@ -18,7 +18,7 @@ is proportional (within statistical considerations) to the energy loss of the pa
 Those photons will enter the PMT and produce electrons that form the electrical pulse we measure.
 The size of the electrical pulse in a PMT is proportional to the number of photons detected.
 To maximize the number of photons that reach the photocathode it is necessary that the scintillator,
-light guide and photomultiplier tube all be wrapped in reflective foil. Also, to block external 
+light guide, and photomultiplier tube all be wrapped in reflective foil. Also, to block external 
 light the assembly is then covered by black tape.
 	\begin{figure}
 		\centering
@@ -37,7 +37,7 @@ light the assembly is then covered by black tape.
 	Other than the detector itself, we use a NIM (Nuclear Instrument Modules) and a 
     CAMAC (Computer Automated Measurement And Control) crate with appropriate cards and modules.
     All algorithms and tunings of the experiment are done within the NIM crate and CAMAC is used
-    for the read-out. The NIM modules whidh are used can be summarized as follows: 
+    for the read-out. The NIM modules which are used can be summarized as follows: 
 	\vskip 0.09 cm
 	\textbf{HV power supply:}\\ CAEN N470 Quad Channel NIM Programmable High Voltage
     Power Supply ($\pm \SI{8}{kV}, \SI{1}{mA}, \pm \SI{3}{kV}  \SI{3}{mA}$).\\
@@ -45,27 +45,27 @@ light the assembly is then covered by black tape.
     we can select the channel and set the HV for each PMT.
 	\vskip 0.09 cm
 	\textbf{Discriminator:}\\ CAEN N840 Octa Channel Leading Edge Discriminator module; pulse width:
-    5-40\,ns and threshold 1-255\,mV.\\
+    5-40\,ns, and threshold 1-255\,mV.\\
 	Given an analog input signal, the discriminator compares the amplitude with a threshold 
     (in mV since it is amplitude). If the falling edge of the input signals overcomes the threshold
     then a LOGIC 1 signal is produced as output. If the signal is lower than the threshold,
     a LOGIC 0 is generated. The Standard LOGIC used by this module is the Nuclear Instrument
     Module Logic (NIM).
 	\vskip 0.09 cm
-	\textbf{Logic Unit}:\\ CAEN N405 3 fold logic unit module having 3 independent sections to
+	\textbf{Logic Unit}:\\ CAEN N405 3-fold logic unit module having 3 independent sections to
     perform logic AND/OR up to 4 logic signals in input.\\
 	It provides 1 linear OUT (width of the signals depending on input signals superposition),
-    2 ﬁxed width (adjustable) OUT signals, 1 ANTI OUT signal and 1 VETO input.\\
+    2 ﬁxed width (adjustable) OUT signals, 1 ANTI OUT signal, and 1 VETO input.\\
 	The ﬁrst signal enters the LOGIC unit. During this time it is “1” the other signal arrives
     so there is $\Delta t$ during which both signals are “1”. 
     This means the signals coincide and an AND signal is produced.
 	\vskip 0.09 cm
 	\textbf{FI/FO}:\\ CAEN N625 Quad Linear FAN-IN FAN-OUT module\\
 	The module has 4 identical sections. Each section has 4 inputs that can be fed with analog
-    signals. Then for each section there are 4 identical OUT signals. If only one IN is used the
+    signals. Then for each section, there are 4 identical OUT signals. If only one IN is used the
     4 OUT are the replica of the IN signal. If more than one IN is connected then the OUTs provide
     the sum of the IN signals. So each of the 4 sections of this module can be used to replicate 
-    a signal till 4 times (4 OUT).
+    a signal 4 times (4 OUT).
 	\vskip 0.09 cm
 	\textbf{Counter/Scalar:}\\ CAEN N1145 Quad Scaler and Preset Counter/Timer\\
 	Count 4 NIM or TTL level signals for a given time interval deﬁned by the user.
