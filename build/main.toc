@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}General introduction to muons}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Muons from cosmic ray showers}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Experimental Setup}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Preliminary Measurements}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Working Voltage for the Photomultipliers}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Threshold measurements}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}TDC callibration}{11}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Trigger Logic and Data Taking}{12}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Data Analysis}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Final Results and Conclusions}{14}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Appendix}{16}{appendix.A}%
