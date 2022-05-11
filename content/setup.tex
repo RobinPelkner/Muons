@@ -1,25 +1,8 @@
 \chapter{Experimental Setup}
 \label{sec:setup}
-In our experiment, we are detecting mostly cosmic muons slowed down by an iron block, 
-using three layers of scintillating detector attached to photomultiplier tubes (PMTs)
-via a light guide. The top two scintillators form a sandwich and are required to fire in
-coincidence. The choice to use an iron block was made due to its relatively high density,
-which makes muons suffer larger energy losses compared to the scintillator.
-Because of the many collisions experienced as the muons travel through the metal,
-some muons lose sufficient energy that they slow down until they can be \textit{captured}
-by one of the atoms in the scintillator. 
-The captured muon will eventually decay into an electron or positron and two neutrinos.
-The goal is to select only the muons that cross the top two scintillators, 
-slow down in the metal and then stop and decay in the bottom scintillator.
-These charged muons passing through a scintillating material excite the vibrational motion 
-of the molecules which, when de-energized, emit visible light photons (approximately one photon
-for every \SI{100}{eV} deposited). The number of photons produced by scintillation 
-is proportional (within statistical considerations) to the energy loss of the passing particle.
-Those photons will enter the PMT and produce electrons that form the electrical pulse we measure.
-The size of the electrical pulse in a PMT is proportional to the number of photons detected.
-To maximize the number of photons that reach the photocathode it is necessary that the scintillator,
-light guide, and photomultiplier tube all be wrapped in reflective foil. Also, to block external 
-light the assembly is then covered by black tape.
+	In our experiment, we are detecting, mostly cosmic muons slowed by iron block(26 cm thick), using three layers of plastic scintillators (P0, P1 and P2) coupled to photo multipliers tubes (PMTs) each via a light guide. Due to the mechanisms of energy loss, from Bethe-Bloch formula, the minimum energy needed by muons to pass through 26 cm of iron is $E_{\mu} \approx 382 MeV$ (considering muons at the minimum of ionization energy). Moreover, the block of iron reduces the electromagnetic component of the cosmic rays.
+	The incoming muons are detected by the counters P0 and P1 which are thin enough to allow the muons to pass through. During the passage, these charged muons excite the vibrational motion of the molecules which, when de-energized, emit visible light photons( ~1 photon for every 100 eV deposited). The number of photons produced by scintillation is proportional (within statistical considerations) to the energy loss of the passing particle. Those photons will enter the PMT and produce electrons that form the electrical pulse we measure. The size of electronic pulse in a PMTs is proportional to the number of photons produced by scintillator. To maximize the numbers of photon that reach the photocathode of the PMTs, it is necessary that the scintillator, light guide and photomultiplier tube all be wrapped in reflective foil. Also, to block external light the assembly is then covered by black tape.
+	After P1, the muons encounter a slab of iron in which some of them eventually stop and decay. If it happens, the emitted electron or positron is then detected by the surrounding counters. Therefore, what we would like to measure is the time interval between the signal for a stopped muon ( ’$\mu$ stop’) and the detection of emitted electron or positron.
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.63\textwidth]{figures/11.png}
@@ -30,21 +13,20 @@ light the assembly is then covered by black tape.
 	\begin{figure}
 		\centering
 		\includegraphics[width=1\textwidth]{figures/33.png}
-		\caption{The experimental setup where it is shown in lateral and front view the absorber layers (dark grey) and the scintillator planes (light grey) with the dimensions in cm.}
+		\caption{Scintillators with PMTs arrange in planes.}
 		\label{fig:Setup}
 	\end{figure}
 	\vskip 0.09 cm
 	Other than the detector itself, we use a NIM (Nuclear Instrument Modules) and a 
-    CAMAC (Computer Automated Measurement And Control) crate with appropriate cards and modules.
+    CAMAC (Computer Automated Measurement And Control) crate with appropriate boards and modules.
     All algorithms and tunings of the experiment are done within the NIM crate and CAMAC is used
     for the read-out. The NIM modules which are used can be summarized as follows: 
 	\vskip 0.09 cm
 	\textbf{HV power supply:}\\ CAEN N470 Quad Channel NIM Programmable High Voltage
-    Power Supply ($\pm \SI{8}{kV}, \SI{1}{mA}, \pm \SI{3}{kV}  \SI{3}{mA}$).\\
-	This module is the power supply to the photomultiplier tubes. Using the correct functions,
-    we can select the channel and set the HV for each PMT.
+    Power Supply ($\pm \SI{8}{kV}, \SI{1}{mA}, \pm \SI{3}{kV},  \SI{3}{mA}$).\\
+	This module is the power supply to the photomultiplier tubes.
 	\vskip 0.09 cm
-	\textbf{Discriminator:}\\ CAEN N840 Octa Channel Leading Edge Discriminator module; pulse width:
+	\textbf{Discriminator:}\\ CAEN N840 8 Channel Leading Edge Discriminator module; pulse width:
     5-40\,ns, and threshold 1-255\,mV.\\
 	Given an analog input signal, the discriminator compares the amplitude with a threshold 
     (in mV since it is amplitude). If the falling edge of the input signals overcomes the threshold
@@ -67,7 +49,14 @@ light the assembly is then covered by black tape.
     the sum of the IN signals. So each of the 4 sections of this module can be used to replicate 
     a signal 4 times (4 OUT).
 	\vskip 0.09 cm
-	\textbf{Counter/Scalar:}\\ CAEN N1145 Quad Scaler and Preset Counter/Timer\\
+	\textbf{Counter/Scaler:}\\ CAEN N1145 Quad Scaler and Preset Counter/Timer\\
 	Count 4 NIM or TTL level signals for a given time interval deﬁned by the user.
     The user can follow the countdown and read the number of counts on displays.
-
+    	\vskip 0.09 cm
+	\textbf{Dual Timer:}//
+	
+	\vskip 0.09 cm
+	\textbf{Dual Delay:}//
+	
+	\vskip 0.09 cm
+	\textbf{Oscilloscope:}//
