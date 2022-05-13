@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1650796261 "build/main.bcf" "build/main.bbl" "build/main" 1650797356
-  "build/main.bcf" 1650797355 101810 ca9baaa703efbd3cc6be0c980176197b "lualatex"
+["biber build/main"] 1650796261 "build/main.bcf" "build/main.bbl" "build/main" 1651056795
+  "build/main.bcf" 1651056794 101810 ca9baaa703efbd3cc6be0c980176197b "lualatex"
   "lit.bib" 1649251633 431 4e256d05600340bcdd7ffc8a9a7ae7f0 ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1650797346 "main.tex" "build/main.pdf" "main" 1650797356
+["lualatex"] 1651056785 "main.tex" "build/main.pdf" "main" 1651056795
   "/home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf" 1255129361 66268 9cda782e3eb1fe3b50d078d2ea7728b5 ""
@@ -239,17 +239,17 @@
   "/home/robin/.local/texlive/2020/texmf-var/tex/generic/config/language.dat" 1588412069 6633 c1a3fba1b883b51b9509d37b574930d8 ""
   "/home/robin/.local/texlive/2020/texmf-var/web2c/luahbtex/lualatex.fmt" 1588412148 2661637 efbf39eb207e53492fecc2ee630ba529 ""
   "build/../content/treshtable.tex" 1649600070 612 626516132d3ca252cf1ae2fd566c0673 ""
-  "build/main.aux" 1650797355 17652 2730d0594dc7bdfaaf1a8697b668c838 "lualatex"
+  "build/main.aux" 1651056794 17908 7ee0fb14b5a33281e24e20cf2b54ed37 "lualatex"
   "build/main.bbl" 1650796263 2728 daade48a4d2f12b6cedf47f0c6b13a3b "biber build/main"
-  "build/main.run.xml" 1650797355 2333 4623153eb1a403dbc354d5e56094ece9 "lualatex"
-  "build/main.toc" 1650797355 1094 c3536ac407c078bab909baad311d8a1b "lualatex"
-  "content/abstract.tex" 1649251945 366 a66e4d7cc818f6a884f6c6dc8e25373b ""
-  "content/appendix.tex" 1649598862 4899 c4b37075bb5899dd0ecb70b6a886b757 ""
+  "build/main.run.xml" 1651056794 2333 4623153eb1a403dbc354d5e56094ece9 "lualatex"
+  "build/main.toc" 1651056794 1116 d1b7b3dbaa6eebacaee30c4f719c971b "lualatex"
+  "content/abstract.tex" 1651056287 370 0c9d0deb3aea7a7593d410470c42836f ""
+  "content/appendix.tex" 1651056488 4907 6a8db8a78763ad137698f5bfa9d91679 ""
   "content/data_analysis.tex" 1649247145 51 d75f26618490706d854ce110a64e4ca3 ""
-  "content/introduction.tex" 1650796247 8192 fad51bd5ae5a0b3963a9b1484faeb52a ""
-  "content/preliminary.tex" 1649608210 7769 908f0e407f5bfd22b3726cc0a9b459c5 ""
+  "content/introduction.tex" 1651056766 8338 84ebdcf239651b2b3dbf3ba5daffa24c ""
+  "content/preliminary.tex" 1651056287 7758 e46eed498f40ce265ab6fa9d5a780630 ""
   "content/results.tex" 1649247165 61 ab9d8e4150244bae45dfe2b577592fdc ""
-  "content/setup.tex" 1650797342 4995 4b84b4e785da4515eb250acf173b5025 ""
+  "content/setup.tex" 1651056287 4994 ad5f21487173af0197fff8046df53bcb ""
   "content/trigger_and_data.tex" 1649247128 60 0f6fa73fd1453bb9f7c94284e9ae0d8d ""
   "figures/11.png" 1649777821 20336 8581372ee475d1a39c71d6967409c0d9 ""
   "figures/22.png" 1649777849 20071 69f3d8b9045c6f77c15156dd33450115 ""
@@ -277,9 +277,9 @@
   "plots/threshR20.pdf" 1649600478 12637 df1411ce7e30571bc4555faac79939f0 ""
   "plots/threshR21.pdf" 1649600507 11220 c9a949e60f0e1b874a35fd63aeb062cb ""
   (generated)
-  "build/main.pdf"
   "build/main.toc"
-  "build/main.aux"
+  "build/main.pdf"
   "build/main.bcf"
+  "build/main.aux"
   "build/main.run.xml"
   "build/main.log"

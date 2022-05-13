@@ -11,4 +11,4 @@
 \contentsline {chapter}{\numberline {4}Trigger Logic and Data Taking}{12}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Data Analysis}{13}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Final Results and Conclusions}{14}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Appendix}{16}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Threshold voltages of the PMTs}{16}{appendix.A}%
