@@ -1,53 +1,47 @@
 \chapter{Introduction}
-This experiment aims to determine the lifetime of muons. Muons are produced by cosmic ray showers 
-in the higher atmosphere. Incoming Protons react with the hadrons of the atmosphere and produce 
-pions, which can decay into muons. Due to the high, relativistic velocities of the muons, they can 
-reach the surface of the earth. \\
-In this experimental setup, the incoming muons are slowed down and stopped
-by layers of iron and then detected with a plastic scintillator. A trigger logic is used to determine 
-the lifetime of the various incoming muons.\\
+This experiment aims to determine the lifetime of muons. Muons are produced by cosmic ray showers in the higher atmosphere.
+Incoming Protons interact with the atmosphere and produce pions, which can decay into muons that are reaching the surface of the earth. \\
+In this experimental setup, the incoming muons are slowed down and stopped by layers of iron and then detected with plastic scintillators.\\
 This report is structured as follows: in this chapter, an introduction to the physical aspects of muons is given.
 \hyperref[sec:setup]{Chapter~\ref*{sec:setup}} describes the used components and the experimental setup. In \hyperref[sec:prem]{Chapter~\ref*{sec:prem}}
-the preliminary measurements for the calibration of the setup are described and their results are discussed. \hyperref[sec:trigger]{Chapter~\ref*{sec:trigger}} discusses
-the composition of the experiment and the process of data taking, while \hyperref[sec:data_analysis]{Chapter~\ref*{sec:data_analysis}} 
-presents the data analysis. \hyperref[sec:results]{Chapter~\ref*{sec:results}} concludes this report.
+the preliminary measurements for the calibration of the setup are described and their results are discussed. \hyperref[sec:trigger]{Chapter~\ref*{sec:trigger}} discusses the composition of the experiment and the process of data taking, while \hyperref[sec:data_analysis]{Chapter~\ref*{sec:data_analysis}} presents the data analysis. \hyperref[sec:results]{Chapter~\ref*{sec:results}} concludes this report.
 
 
 \newpage
 \section{General introduction to muons}
 The standard model of elementary particles differentiates between quarks, leptons, and bosons.
-Quarks, as well as leptons, can be divided into three generations. The muons and the antimuon respectively 
-are the second generation of leptons together with their each associated neutrinos. Like the electron,
-muons have an spn $1/2$ and a negative elementary charge (a positive elementary charge for the antimuon).
-Although the similarities, both leptons differ concerning their masses and their lifetimes.\\
-While the electron is a stable particle, the muon has a finite lifetime, which this experiment is supposed 
-to detect. The lifetime, given as an average result of past measurements, is $\tau = \SI{2.1969811 \pm 0.0000022}{\micro\second}$.
-Their mass is given as $m_{\mu} = \SI{105.6583745 \pm 0.0000024}{\mega\eV}$, which 
-is 206 times the mass of the electron \cite{pdg}.
+Quarks, as well as leptons, can be divided into three generations.
+The muons and the antimuon respectively are the second generation of leptons together with their associated neutrinos.
+Like the electron, muons have an spin $1/2$ and a negative elementary charge (a positive elementary charge for the antimuon).
+Although the similarities, they differ concerning their masses and their lifetimes.\\
+While the electron is a stable particle, the muon has a finite lifetime, which this experiment is supposed to measure. 
+The lifetime, given as an average result of past measurements, is $\tau = \SI{2.1969811 \pm 0.0000022}{\micro\second}$.
+Their mass is $m_{\mu} = \SI{105.6583745 \pm 0.0000024}{\mega\eV}$, which is 206 times the mass of the electron \cite{pdg}.
+
 \section{Muons from cosmic ray showers} 
-Muons are naturally produced in cosmic ray showers. When a particle strikes the 
-hadrons in the upper atmosphere, they interact and produce a hadronic shower. These particles originate 
-in various galactic and intergalactic sources like the sun, the Milky Way, and other galaxies. The cosmic 
-ray is mostly protons, but also electrons and atomic nuclei. The protons 
-hadronize mostly into $\pi$ mesons, because they are the lightest mesons, but also into $K$ mesons 
-and other hadrons.
-The primary cosmic rays are completely hadronized at altitudes of $\SI{20}{km}$. Because $\pi$ mesons and $K$ mesons are not stable with lifetimes in the order of 
-magnitude of $\SI{e8}{\second}$ they decay very fast. For the decay into muons, the $\pi$ mesons have a branching ratio
-of $\Gamma = (99.98770\pm{0.00004})\%$, while the $K$ mesons have a branching ratio of $\Gamma = (63.56\pm{0.11})\%$ \cite{pdg}. 
-It should be noted that these decays into muons only occur with charged $\pi$ and $K$ mesons. Neutral 
-Mesons are also produced in these showers, but they do not decay into charged muons. The decay of the $\pi$ mesons 
-takes place via the weak interaction 
+Muons are naturally produced in cosmic ray showers. 
+The cosmic ray is mostly protons, but also electrons and atomic nuclei.
+These particles originate in various galactic and intergalactic sources like the sun, the Milky Way, and other galaxies.
+When a cosmic particle (e.g; Proton) strikes and interact the atmosphere, it produces a hadronic shower.
+The protons hadronize mostly into $\pi$ mesons, because they are the lightest mesons, but also into $K$ mesons and other hadrons.
+The primary cosmic rays are completely hadronized at altitudes about $\SI{20}{km}$. 
+Because $\pi$ mesons and $K$ mesons are not stable with lifetimes in the order of magnitude of $\SI{e{-8}}{\second}$ they decay very fast. 
+For the decay into muons, the $\pi$ mesons have a branching ratio of $\Gamma = (99.98770\pm{0.00004})\%$, while the $K$ mesons have a branching ratio of $\Gamma = (63.56\pm{0.11})\%$ \cite{pdg}.
+It should be noted that these decays into muons only occur with charged $\pi$ and $K$ mesons.
+Neutral mesons are also produced in these showers, but they do not decay into charged muons.
+The decay of the $\pi$ mesons takes place via the weak interaction 
 \begin{align*}
     \pi^{+} &\to \mu^{+} + \nu_{\mu} \\
     \pi^{-} &\to \mu^{-} + \bar{\nu}_{\mu}.
 \end{align*}
-This process is analogous to $K$ mesons. The muons also only decay via the weak interaction as follows 
+This process is analogous to $K$ mesons.
+The muons also only decay via the weak interaction as follows 
 \begin{align*}
-    \mu^{-} &\to e^{-} + \bar{\nu}_{e} \\
-    \mu^{+} &\to e^{+} + \nu_{e}.
+    \mu^{-} &\to e^{-} + \bar{\nu}_{e} + {\nu}_{\mu} \\
+    \mu^{+} &\to e^{+} + \nu_{e} + \bar{\nu}_{\mu}.
 \end{align*}
-Because the muons have a longer lifetime, they can reach the surface of the earth and can be detected through their decay. 
-A schematic with typical processes, which lead among other things to the production of muons, can be seen in \autoref{fig:cosmic_ray_showers}.
+Because the muons have a longer lifetime than pions. Hence, muons can reach the surface of the earth and can be detected through their decay. 
+A schematic with typical processes, which lead to the production of muons, can be seen in \autoref{fig:cosmic_ray_showers}.
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{figures/cascade.png}
@@ -56,19 +50,16 @@ A schematic with typical processes, which lead among other things to the product
     This is called a decay chain or a cosmic ray shower\cite{nasa}.}
     \label{fig:cosmic_ray_showers}
 \end{figure}
-Now that the particle is produced in the high atmosphere, even if their lifetime will not let
-them reach the ground, thanks to their relativistic speed time dilatation is enabled which
-extends their lifetime enough to let them arrive on the earth.\\
-Suppose a factor $\beta = 0.999c$ and a muon lifetime $\tau = \SI{2e-6}{s}$, 
-classically this is not enough. But since the beta factor is high enough we end up in
-the relativistic regime and we can calculate
+\\
+Suppose a factor $\beta = 0.999c$ and a muon lifetime $\tau = \SI{2e-6}{s}$, classically this is not enough.
+But since the beta factor is high enough we end up in the relativistic regime and we can calculate
 \begin{equation*}
 \tau '  = \frac {1}{\sqrt{1- \beta ^2}} \tau = 1.4 \cdot 10^{-4}
 \end{equation*}
 which is a lot longer than the classical result would allow. 
-Once they arrive we can prepare an apparat to detect them.
-The basic idea is that when a particle passes through matter they release part of its energy which
-is converted into new particles or radiation. The amount of released energy is explained by the
+Once they arrive on the surface of earth, we can use experimental apparatus to detect them.
+The basic idea is that when a particle passes through matter they release part of its energy which is converted into new particles or radiation.
+The amount of released energy is described by the
 Bethe Bloch Formula:\\\\
 \begin{equation*}
 -\frac {\symup{d}E}{\symup{d}x} = 2 \pi N_a r_{e}^{2}m_{e}c^{2}\rho \frac{Z}{A} \frac {z^{2}}{\beta^{2}} [ ln(\frac{2m_{e} \gamma^{2} v^{2} W_{max}}{I^{2}}  - 2 \beta^{2} - \delta 2 \frac {C}{Z})]
