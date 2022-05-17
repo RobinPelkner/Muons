@@ -13,7 +13,15 @@ plots/hvR10B.pdf: python/hv.py matplotlibrc header-matplotlib.tex | build
 plots/threshR20.pdf: python/thresh.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS=$$(pwd): python3 python/thresh.py
 
-build/main.pdf: plots/hvR10B.pdf plots/threshR20.pdf
+plots/delay.pdf: python/delay.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS=$$(pwd): python3 python/delay.py	
+
+plots/analysis.pdf:	 python/analysis.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS=$$(pwd): python3 python/analysis.py	
+plots/tdc.pdf:	 python/tdc.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS=$$(pwd): python3 python/tdc.py		
+
+build/main.pdf: plots/hvR10B.pdf plots/threshR20.pdf plots/delay.pdf plots/analysis.pdf  plots/tdc.pdf
 
 
 build/main.pdf: FORCE | build
