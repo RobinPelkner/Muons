@@ -7,13 +7,13 @@
 		\centering
 		\includegraphics[width=0.63\textwidth]{figures/11.png}
 		\includegraphics[width=0.36\textwidth]{figures/22.png}
-		\caption{The experimental setup where it is shown in lateral and front view the absorber layers (dark grey) and the scintillator planes (light grey) with the dimensions in cm.}
+		\caption{The experimental setup where it is shown in lateral and front view the absorber layers (dark grey) and the scintillator planes (light grey) with the dimensions in cm. Ref. Lab Manual Part 1}
 		\label{fig:Scintillators_Detectors}
 	\end{figure}
 	\begin{figure}
 		\centering
 		\includegraphics[width=1\textwidth]{figures/33.png}
-		\caption{Scintillators with PMTs arrange in planes.}
+		\caption{Scintillators with PMTs arranged in planes. Ref. Lab Manual Part 1}
 		\label{fig:Setup}
 	\end{figure}
 	\vskip 0.09 cm
@@ -22,11 +22,11 @@
     All algorithms and tunings of the experiment are done within the NIM crate and CAMAC is used
     for the read-out. The NIM modules which are used can be summarized as follows: 
 	\vskip 0.09 cm
-	\textbf{HV power supply:}\\ CAEN N470 Quad Channel NIM Programmable High Voltage
-    Power Supply ($\pm \SI{8}{kV}, \SI{1}{mA}, \pm \SI{3}{kV},  \SI{3}{mA}$).\\
+	\textbf{HV power supply:}\\ N470 CEAN 4 Channel NIM Programmable High Voltage
+    Power Supply.\\
 	This module is the power supply to the photomultiplier tubes.
 	\vskip 0.09 cm
-	\textbf{Discriminator:}\\ CAEN N840 8 Channel Leading Edge Discriminator module; pulse width:
+	\textbf{Discriminator:}\\ N840 CEAN 8 Channel Leading Edge Discriminator module; pulse width:
     5-40\,ns, and threshold 1-255\,mV.\\
 	Given an analog input signal, the discriminator compares the amplitude with a threshold 
     (in mV since it is amplitude). If the falling edge of the input signals overcomes the threshold
@@ -53,10 +53,16 @@
 	Count 4 NIM or TTL level signals for a given time interval deﬁned by the user.
     The user can follow the countdown and read the number of counts on displays.
     	\vskip 0.09 cm
-	\textbf{Dual Timer:}//
+	\textbf{Dual Timer:}// CEAN N93B Dual Timer module//
+	This NIM module housing two identical triggered pulse generators which produce NIM and ECL pulses whose width ranges from 50 ns to 10 s when 	triggered. Output pulses are provided normal and complementary. Timers can be re-triggered with the pulse end marker signal.
 	
 	\vskip 0.09 cm
-	\textbf{Dual Delay:}//
+	\textbf{Dual Delay:}// CEAN N108A Dula delay module//
+	Delay ranges from 0 to 63.5 ns (+ 1.6 ns offset) per section. The delay can be set in 0.5 ns steps. The delay lines are made up of calibrated coaxial cable stubs for high accuracy delay and do not require power supply.
 	
 	\vskip 0.09 cm
 	\textbf{Oscilloscope:}//
+	
+	\vskip 0.09 cm
+	\textbf{TDC:}// CAEN mod. C414\\
+	A single width CAMAC unit housing 8 independent 12 bit time-to-digital conversion channels. The full scale time can be selected from 100 ns to 5 μs via internal DIP switches. The time resolution ranges from 25 ps to 1.25 ns (respectively for 100 ns and 5 μs full scale time range). The conversion time is 2.5 μs per channel and it is reduced to 1.5 μs for overflow channels. A CAMAC LAM is generated (if enabled) at the end of the conversion.
