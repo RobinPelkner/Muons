@@ -47,7 +47,7 @@ print(x.shape)
 p0, bin_edges, dump = plt.hist(x, bins=number_of_bins, range=range_of_bins, histtype='barstacked', edgecolor='royalblue', color=['lightsteelblue'])
 #print('P0', bin_edges)
 bin_centers = 0.5*(bin_edges[1:] + bin_edges[:-1])
-popt, cov = curve_fit(f, bin_centers[4:], p0[4:], sigma=np.sqrt(p0[4:]), p0=[3, 100, 2000])
+popt, cov = curve_fit(f, bin_centers[4:], p0[4:], p0=[3, 100, 2000])
 print(chisquare(p0[4:], f_exp=f(bin_centers[4:], *popt)))
 print('P0')
 print(popt[0], np.sqrt(cov[0][0]))
@@ -77,7 +77,6 @@ p12 = p12.div(conv)
 p12['chan12'] = p12['chan12'] + p12['chan6'] 
 p11 = p11.sub(offset)
 p11 = p11.div(conv)
-print(p11.shape)
 #Checking for events in both tdc at the "same" time; there are none
 #c = df.drop(df[(df['chan3'] ==4095) | (df['chan11'] ==4095) ].index)
 #print(c.head())
@@ -86,7 +85,8 @@ x = p11['chan4']
 x = x.append(p12['chan12'])
 p1, bin_edges, dump = plt.hist(x, bins=number_of_bins, range=range_of_bins, histtype='barstacked', edgecolor='royalblue', color=['lightsteelblue'])
 bin_centers = 0.5*(bin_edges[1:] + bin_edges[:-1])
-popt, cov = curve_fit(f, bin_centers[2:], p1[2:], sigma=np.sqrt(p1[2:]), p0=[3, 100, 2000])
+popt, cov = curve_fit(f, bin_centers[2:], p1[2:], p0=[3, 100, 2000])
+print(x.shape)
 print(chisquare(p1[2:], f_exp=f(bin_centers[2:], *popt)))
 print('P1')
 print(popt[0], np.sqrt(cov[0][0]))
@@ -115,16 +115,16 @@ p22 = p22.div(conv)
 p22['chan13'] = p22['chan13'] + p22['chan6'] 
 p21 = p21.sub(offset)
 p21 = p21.div(conv)
-print(p21.shape)
 #Checking for events in both tdc at the "same" time; there are none
 #c = df.drop(df[(df['chan3'] ==4095) | (df['chan11'] ==4095) ].index)
 #print(c.head())
 number_of_bins =60
 x = p21['chan5']
 x = x.append(p22['chan13'])
+print(x.shape)
 p2, bin_edges, dump = plt.hist(x, bins=number_of_bins, range=range_of_bins, histtype='barstacked', edgecolor='royalblue', color=['lightsteelblue'])
 bin_centers = 0.5*(bin_edges[1:] + bin_edges[:-1])
-popt, cov = curve_fit(f, bin_centers[3:], p2[3:], sigma=np.sqrt(p2[3:]),p0=[3, 100, 2000])
+popt, cov = curve_fit(f, bin_centers[3:], p2[3:],p0=[3, 100, 2000])
 print(chisquare(p2[3:], f_exp=f(bin_centers[3:], *popt)))
 print('P2')
 print(popt[0], np.sqrt(cov[0][0]))
@@ -147,9 +147,10 @@ range_of_bins = (0, 8700)
 number_of_bins= 44
 x = p21['chan5']
 x = x.append([p22['chan13'], p11['chan4'], p12['chan12'], p01['chan3'], p02['chan11']]) 
-pALL, bin_edges, dump = plt.hist(x, bins=number_of_bins, range=range_of_bins, histtype='barstacked', edgecolor='royalblue', color=['lightsteelblue'], stacked=True)
+pALL, bin_edges, dump = plt.hist(x, bins=number_of_bins, align='left', range=range_of_bins, histtype='barstacked', edgecolor='royalblue', color=['lightsteelblue'], stacked=True)
 bin_centers = 0.5*(bin_edges[1:] + bin_edges[:-1])
-popt, cov = curve_fit(f, bin_centers[3:], pALL[3:], sigma=np.sqrt(pALL[3:]), p0=[3, 100, 2000])
+popt, cov = curve_fit(f, bin_centers[3:], pALL[3:], p0=[3, 100, 2000])
+print(x.shape)
 print(chisquare(pALL[3:], f_exp=f(bin_centers[3:], *popt)))
 print('PALL')
 print(popt[0], np.sqrt(cov[0][0]))
@@ -184,8 +185,8 @@ print(popt[2], np.sqrt(cov[2][2]))
 print(popt[3], np.sqrt(cov[3][3]))
 x_interval_for_fit = np.linspace(bin_edges[1], bin_edges[-1], 10000)
 
-plt.plot(x_interval_for_fit, test(x_interval_for_fit, *popt), label='fit', color='orangered')
-plt.plot(x_interval_for_fit[1:], f(x_interval_for_fit[1:], a=popt[1], b=popt[0], tau=popt[3]), color='green')
+plt.plot(x_interval_for_fit, test(x_interval_for_fit, *popt), label='Fit', color='orangered')
+plt.plot(x_interval_for_fit[1:], f(x_interval_for_fit[1:], a=popt[1], b=popt[0], tau=popt[3]), color='green', label='Fit for bound Muons')
 plt.errorbar(
     bin_centers,
     ptest,
@@ -194,6 +195,8 @@ plt.errorbar(
     color='royalblue',
     capsize=3.0
 )
+plt.legend()
+plt.tight_layout()
 plt.savefig('plots/ptest.pdf')
 #df = df.mul(conv)
 #print(df.head())

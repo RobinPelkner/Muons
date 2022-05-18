@@ -2183,9 +2183,8 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">pdg</bcf:citekey>
-    <bcf:citekey order="2">pdg</bcf:citekey>
+    <bcf:citekey order="2">nasa</bcf:citekey>
     <bcf:citekey order="3">nasa</bcf:citekey>
-    <bcf:citekey order="4">nasa</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

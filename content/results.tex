@@ -1,3 +1,53 @@
 \chapter{Final Results and Conclusions}
 \label{sec:results}
+\section{Analysis of each plane}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{plots/p0.pdf}
+    \caption{Plane 0.}
+    \label{fig:p0}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{plots/p1.pdf}
+    \caption{Plane 1.}
+    \label{fig:p1}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{plots/p2.pdf}
+    \caption{Plane 2.}
+    \label{fig:p2}
+\end{figure}
+Fit function:
+\begin{equation*}
+    N = a \cdot \exp(- \frac{t}{\tau}) + b
+\end{equation*}
+with N as the number of counts.
+Parameters in Table.
+\input{content/datatable.tex}
 
+\section{All planes}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{plots/pALL.pdf}
+    \caption{All Planes.}
+    \label{fig:pALL}
+\end{figure}
+
+\section{With bound Muons}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{plots/ptest.pdf}
+    \caption{All Planes with bound Muons.}
+    \label{fig:ptest}
+\end{figure}
+
+Parameters:
+\begin{align*}
+    a &= 228 \pm 13 \\
+    b &= 21 \pm 2 \\
+    \tau_{\text{free}} &= 2.1 \pm 0.1 \; \mu s\\
+    \tau_{\text{bound}} &= 0.21 \pm 0.06 \;\mu s
+\end{align*}

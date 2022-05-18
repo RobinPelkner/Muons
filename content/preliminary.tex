@@ -101,4 +101,20 @@ of the \texttt{R10} PMTs and the \texttt{R20} PMTs.
 The dashed line indicates the central values of each plateau. The striped orange areas mark the found plateaus.}
 \label{fig:threshR10R20}
 \end{figure}
+\section{Delay Curve}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{plots/delay.pdf}
+    \caption{Delay Curve R10-R20.}
+    \label{fig:delay}
+\end{figure}
 \section{TDC callibration}
+For all channels a linear function of the form 
+\begin{equation*}
+    \text{TDC Time} = a \cdot t + b
+\end{equation*}
+is fitted to the data. This can be seen for all channels inthe figures \ref{fig:tdc01} to
+\ref{fig:tdc1415}. The estimated parameters are shown in \autoref{tab:tdc}.
+In the following only channels 3, 4, 5 and 6 of each TDC will be used.
+\input{content/tdc_table.tex}
+
