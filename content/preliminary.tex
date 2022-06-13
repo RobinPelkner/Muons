@@ -102,19 +102,80 @@ The dashed line indicates the central values of each plateau. The striped orange
 \label{fig:threshR10R20}
 \end{figure}
 \section{Delay Curve}
+With systematical variation of the delay between the PMTs \texttt{R10} and \texttt{R20} a delay 
+curve for these PMTs can be created. This delay curve is shown in \autoref{fig:delay}.
+For this measurement delay is added to the signals and the coincidences are counted using scalers in 
+a $60 \; \symup{s}$ timeframe. With the usage of a Fan-In-Fan-Out module the same delay 
+can be applied to both signals at the same time. \\
+The delay curve describes the number of coincidences measured for various delays between the PMTs.
+A negative delay time indicates a delay for the signal of \texttt{R10}, while a positive delay 
+represents a delay of the signal of \texttt{R20}. The flanks of the curve can be fitted with linear 
+functions of the form 
+\begin{equation*}
+    N(\Delta t) = a \cdot \Delta t + b
+\end{equation*}
+with $N$ as the number of coincidences and $\Delta t$ as the delay time. 
+The parameter are 
+\begin{align*}
+    a_{\text{left}} = (64.9 \pm 7.6)\; \symup{\frac{1}{ns}} \qquad
+    b_{\text{left}} = 2328.6 \pm 251.4
+\end{align*} 
+for the left flank from $-36\;\symup{ns}$ to $-25\;\symup{ns}$ and    
+\begin{align*}
+    a_{\text{right}} = (-49.4 \pm 6.3)\; \symup{\frac{1}{ns}} \qquad
+    b_{\text{right}} = 1972.6 \pm 227.3
+\end{align*} 
+for the right flank in the interval $32\;\symup{ns}$ to $40\;\symup{ns}$.
+The plateau between the two flanks has an average value of $343.3 \pm 18.6$. With the estimated 
+parameters and the plateau value the time values of the half maximums are 
+\begin{equation*}
+    \Delta t_{\text{left}} = -33 \pm 5 \qquad
+    \Delta t_{\text{right}} = 36 \pm 7.
+\end{equation*}
+Thus, the full width half maximum can be estimated as 
+\begin{equation*}
+    \Delta t_{\text{FWHM}} = 70 \pm 9
+\end{equation*}
+which is a measure for the resolution of the PMTs.
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{plots/delay.pdf}
-    \caption{Delay Curve R10-R20.}
+    \caption{Delay Curve between the PMTs \texttt{R10} and \texttt{R20}. The number of coincidences is plotted against the delay between the the PMTs.
+    Furthermore, linear fits of the flanks and the FWHM are plotted.}
     \label{fig:delay}
 \end{figure}
 \section{TDC callibration}
+To convert the TDC time units into real time units the various TDC channels have to be callibrated.
+In this step malfunctioning TDC channels can be detected as well. To accomplish this,
+a fake trigger signal is needed at a rate of about $4 \; \symup{Hz}$. A fake signal is used to optimize 
+the shape and the rate for an optimal calibration measurement. The fake signal is generated using the 
+end marker of a dual timer. First, a signal is send to the START of the TDCs. Then this signal is used 
+to create a delayed signal which stops the various channels. The time difference between start and stop signal was measuered with 
+an oscilloscope. To ensure a good calibration, all cables 
+had to be of the exact same length.\\
+For all channels and for each time difference ranging from $0.5 \; \mu s$ to $4.8 \mu s$ 
+at least 200 measurements have been done.
+Special attention had to be given to the TDC channels which generated an overflow (i.e. a value greater than 4095)
+and other anomilies.
+These channels could not be fully used in the data taking since they would provide unreliable
+and incomplete data. Especially the second TDC had problems regarding overflows at times greater than $3 \; \mu s$.\\
 For all channels a linear function of the form 
 \begin{equation*}
     \text{TDC Time} = a \cdot t + b
 \end{equation*}
-is fitted to the data. This can be seen for all channels inthe figures \ref{fig:tdc01} to
-\ref{fig:tdc1415}. The estimated parameters are shown in \autoref{tab:tdc}.
-In the following only channels 3, 4, 5 and 6 of each TDC will be used.
+is fitted to the data, where $t$ represents the real time values.
+These are shown for all channels in the figures \ref{fig:tdc01} to
+\ref{fig:tdc1415} in \autoref{sec:tdc_figures}.
+The estimated parameters are shown in \autoref{tab:tdc}. Furthermore, a $\chi^2$-test is conducted 
+for all fits, although it has to be taken into account that for some fits a cut-off due to overflow of
+the time values had to be done. The results of $\chi^2$-test per degree of freedom and the cut-off values 
+are also shown in the table.\\
 \input{content/tdc_table.tex}
+With the cut-off of overflow values the $\chi^2$-test values of the fits of all channels are 
+small with the biggest value being produced in channel 2 of TDC 2, which will not be used due to 
+its cut-off anyway. Thus, the fits can be consired succesfull. 
+For the data aquisition the channels 3, 4, 5 and 6 of both TDCs have been chosen.
+In the data analysis both parameter will be used to convert the TDC times into real times although the 
+offset $b$ being small in comparison to the common TDC times ranging from 0 to 4095.
+
 

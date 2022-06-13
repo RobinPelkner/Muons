@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.2)  18 MAY 2022 13:36
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.2)  13 JUN 2022 15:25
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1375,7 +1375,7 @@ Overfull \hbox (3.73792pt too wide) in paragraph at lines 11--19
 \TU/lmr/m/n/10 mea-sure. The life-time, given as an av-er-age re-sult of past mea-sure-ments, is $\TU/LatinModernMath(1)/m/n/10 𝜏 = [] []$\TU/lmr/m/n/10 .
  []
 
-<figures/cascade.png, id=72, 715.67375pt x 552.0625pt>
+<figures/cascade.png, id=74, 715.67375pt x 552.0625pt>
 File: figures/cascade.png Graphic file (type png)
 <use figures/cascade.png>
 Package luatex.def Info: figures/cascade.png  used on input line 41.
@@ -1392,17 +1392,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--51
 
 ) (./content/setup.tex [2] [3<./figures/cascade.png>]
 Chapter 2.
-<figures/11.png, id=91, 826.08624pt x 420.57124pt>
+<figures/11.png, id=93, 826.08624pt x 420.57124pt>
 File: figures/11.png Graphic file (type png)
 <use figures/11.png>
 Package luatex.def Info: figures/11.png  used on input line 8.
 (luatex.def)             Requested size: 283.5022pt x 144.33356pt.
-<figures/22.png, id=92, 494.84875pt x 555.07375pt>
+<figures/22.png, id=94, 494.84875pt x 555.07375pt>
 File: figures/22.png Graphic file (type png)
 <use figures/22.png>
 Package luatex.def Info: figures/22.png  used on input line 9.
 (luatex.def)             Requested size: 162.00027pt x 181.70963pt.
-<figures/33.png, id=93, 757.83125pt x 432.61626pt>
+<figures/33.png, id=95, 757.83125pt x 432.61626pt>
 File: figures/33.png Graphic file (type png)
 <use figures/33.png>
 Package luatex.def Info: figures/33.png  used on input line 15.
@@ -1416,7 +1416,7 @@ Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
 ]
 Chapter 3.
-<figures/hv.jpg, id=112, 1049.9225pt x 463.7325pt>
+<figures/hv.jpg, id=114, 1049.9225pt x 463.7325pt>
 File: figures/hv.jpg Graphic file (type jpg)
 <use figures/hv.jpg>
 Package luatex.def Info: figures/hv.jpg  used on input line 10.
@@ -1429,7 +1429,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--31
 [7
 
 <./figures/hv.jpg>]
-<plots/hvR20A.pdf, id=123, 417.7206pt x 258.0049pt>
+<plots/hvR20A.pdf, id=125, 417.7206pt x 258.0049pt>
 File: plots/hvR20A.pdf Graphic file (type pdf)
 <use plots/hvR20A.pdf>
 Package luatex.def Info: plots/hvR20A.pdf  used on input line 41.
@@ -1442,255 +1442,268 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 7.99915pt on input line 43.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 43.
-<plots/hvR10B.pdf, id=124, 417.7206pt x 258.0049pt>
+<plots/hvR10B.pdf, id=126, 417.7206pt x 258.0049pt>
 File: plots/hvR10B.pdf Graphic file (type pdf)
 <use plots/hvR10B.pdf>
 Package luatex.def Info: plots/hvR10B.pdf  used on input line 47.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<figures/thresh.jpg, id=126, 1080.035pt x 449.68pt>
+<figures/thresh.jpg, id=128, 1080.035pt x 449.68pt>
 File: figures/thresh.jpg Graphic file (type jpg)
 <use figures/thresh.jpg>
 Package luatex.def Info: figures/thresh.jpg  used on input line 66.
 (luatex.def)             Requested size: 391.4978pt x 162.99625pt.
  (./build/../content/treshtable.tex)
-<plots/threshR20.pdf, id=133, 417.7206pt x 258.0049pt>
+<plots/threshR20.pdf, id=135, 417.7206pt x 258.0049pt>
 File: plots/threshR20.pdf Graphic file (type pdf)
 <use plots/threshR20.pdf>
 Package luatex.def Info: plots/threshR20.pdf  used on input line 90.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshR10.pdf, id=134, 417.7206pt x 258.0049pt>
+<plots/threshR10.pdf, id=136, 417.7206pt x 258.0049pt>
 File: plots/threshR10.pdf Graphic file (type pdf)
 <use plots/threshR10.pdf>
 Package luatex.def Info: plots/threshR10.pdf  used on input line 95.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
  [8<./plots/hvR20A.pdf><./plots/hvR10B.pdf>] [9<./figures/thresh.jpg>]
-<plots/delay.pdf, id=192, 417.7206pt x 258.0049pt>
+<plots/delay.pdf, id=195, 417.7206pt x 258.0049pt>
 File: plots/delay.pdf Graphic file (type pdf)
 <use plots/delay.pdf>
-Package luatex.def Info: plots/delay.pdf  used on input line 107.
+Package luatex.def Info: plots/delay.pdf  used on input line 142.
 (luatex.def)             Requested size: 270.00275pt x 166.76422pt.
- (./content/tdc_table.tex)) (./content/trigger_and_data.tex [10<./plots/threshR20.pdf><./plots/threshR10.pdf><./plots/delay.pdf>] [11]
+ [10<./plots/threshR20.pdf><./plots/threshR10.pdf>] (./content/tdc_table.tex
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 3.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 3.
+)) (./content/trigger_and_data.tex [11<./plots/delay.pdf>] [12]
 Chapter 4.
-) (./content/data_analysis.tex [12
+) (./content/data_analysis.tex [13
 
 ]
 Chapter 5.
-) (./content/results.tex [13
+<figures/falsestopping.png, id=277, 665.48625pt x 418.56375pt>
+File: figures/falsestopping.png Graphic file (type png)
+<use figures/falsestopping.png>
+Package luatex.def Info: figures/falsestopping.png  used on input line 17.
+(luatex.def)             Requested size: 270.00275pt x 169.82394pt.
+<figures/electron_escape.png, id=279, 697.10437pt x 414.04688pt>
+File: figures/electron_escape.png Graphic file (type png)
+<use figures/electron_escape.png>
+Package luatex.def Info: figures/electron_escape.png  used on input line 30.
+(luatex.def)             Requested size: 270.00275pt x 160.36568pt.
+[14
 
-]
-Chapter 6.
-<plots/p0.pdf, id=268, 417.7206pt x 258.0049pt>
+<./figures/falsestopping.png>] [15<./figures/electron_escape.png>]
+<plots/p0.pdf, id=298, 417.7206pt x 258.0049pt>
 File: plots/p0.pdf Graphic file (type pdf)
 <use plots/p0.pdf>
-Package luatex.def Info: plots/p0.pdf  used on input line 6.
+Package luatex.def Info: plots/p0.pdf  used on input line 72.
 (luatex.def)             Requested size: 270.00275pt x 166.76422pt.
-<plots/p1.pdf, id=269, 417.7206pt x 258.0049pt>
+<plots/p1.pdf, id=300, 417.7206pt x 258.0049pt>
 File: plots/p1.pdf Graphic file (type pdf)
 <use plots/p1.pdf>
-Package luatex.def Info: plots/p1.pdf  used on input line 12.
+Package luatex.def Info: plots/p1.pdf  used on input line 82.
 (luatex.def)             Requested size: 270.00275pt x 166.76422pt.
-<plots/p2.pdf, id=270, 417.7206pt x 258.0049pt>
+<plots/p2.pdf, id=302, 417.7206pt x 258.0049pt>
 File: plots/p2.pdf Graphic file (type pdf)
 <use plots/p2.pdf>
-Package luatex.def Info: plots/p2.pdf  used on input line 18.
+Package luatex.def Info: plots/p2.pdf  used on input line 90.
 (luatex.def)             Requested size: 270.00275pt x 166.76422pt.
-(./content/datatable.tex) [14
-
-<./plots/p0.pdf>] [15<./plots/p1.pdf><./plots/p2.pdf>]
-<plots/pALL.pdf, id=314, 417.7206pt x 258.0049pt>
+ (./content/datatable.tex)
+<plots/pALL.pdf, id=304, 417.7206pt x 258.0049pt>
 File: plots/pALL.pdf Graphic file (type pdf)
 <use plots/pALL.pdf>
-Package luatex.def Info: plots/pALL.pdf  used on input line 33.
+Package luatex.def Info: plots/pALL.pdf  used on input line 101.
 (luatex.def)             Requested size: 270.00275pt x 166.76422pt.
-<plots/ptest.pdf, id=315, 417.7206pt x 258.0049pt>
+ [16<./plots/p0.pdf>] [17<./plots/p1.pdf><./plots/p2.pdf>]
+<plots/ptest.pdf, id=376, 417.7206pt x 258.0049pt>
 File: plots/ptest.pdf Graphic file (type pdf)
 <use plots/ptest.pdf>
-Package luatex.def Info: plots/ptest.pdf  used on input line 42.
+Package luatex.def Info: plots/ptest.pdf  used on input line 140.
 (luatex.def)             Requested size: 270.00275pt x 166.76422pt.
- [16<./plots/pALL.pdf><./plots/ptest.pdf>]) [17] (./content/appendix.tex [18
+ [18<./plots/pALL.pdf>]) (./content/results.tex [19<./plots/ptest.pdf>]
+Chapter 6.
+) [20
+
+] (./content/appendix.tex [21
 
 ]
 Appendix A.
-<plots/threshR00.pdf, id=362, 417.7206pt x 258.0049pt>
+<plots/threshR00.pdf, id=435, 417.7206pt x 258.0049pt>
 File: plots/threshR00.pdf Graphic file (type pdf)
 <use plots/threshR00.pdf>
 Package luatex.def Info: plots/threshR00.pdf  used on input line 6.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshR10_2.pdf, id=363, 417.7206pt x 258.0049pt>
+<plots/threshR10_2.pdf, id=436, 417.7206pt x 258.0049pt>
 File: plots/threshR10_2.pdf Graphic file (type pdf)
 <use plots/threshR10_2.pdf>
 Package luatex.def Info: plots/threshR10_2.pdf  used on input line 11.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshR01.pdf, id=364, 417.7206pt x 258.0049pt>
+<plots/threshR01.pdf, id=437, 417.7206pt x 258.0049pt>
 File: plots/threshR01.pdf Graphic file (type pdf)
 <use plots/threshR01.pdf>
 Package luatex.def Info: plots/threshR01.pdf  used on input line 22.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshR11.pdf, id=365, 417.7206pt x 258.0049pt>
+<plots/threshR11.pdf, id=438, 417.7206pt x 258.0049pt>
 File: plots/threshR11.pdf Graphic file (type pdf)
 <use plots/threshR11.pdf>
 Package luatex.def Info: plots/threshR11.pdf  used on input line 27.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshL00.pdf, id=366, 417.7206pt x 258.0049pt>
+<plots/threshL00.pdf, id=439, 417.7206pt x 258.0049pt>
 File: plots/threshL00.pdf Graphic file (type pdf)
 <use plots/threshL00.pdf>
 Package luatex.def Info: plots/threshL00.pdf  used on input line 39.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshL10.pdf, id=367, 417.7206pt x 258.0049pt>
+<plots/threshL10.pdf, id=440, 417.7206pt x 258.0049pt>
 File: plots/threshL10.pdf Graphic file (type pdf)
 <use plots/threshL10.pdf>
 Package luatex.def Info: plots/threshL10.pdf  used on input line 44.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshL01.pdf, id=368, 417.7206pt x 258.0049pt>
+<plots/threshL01.pdf, id=441, 417.7206pt x 258.0049pt>
 File: plots/threshL01.pdf Graphic file (type pdf)
 <use plots/threshL01.pdf>
 Package luatex.def Info: plots/threshL01.pdf  used on input line 56.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshL11.pdf, id=369, 417.7206pt x 258.0049pt>
+<plots/threshL11.pdf, id=442, 417.7206pt x 258.0049pt>
 File: plots/threshL11.pdf Graphic file (type pdf)
 <use plots/threshL11.pdf>
 Package luatex.def Info: plots/threshL11.pdf  used on input line 61.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshL10_2.pdf, id=370, 417.7206pt x 258.0049pt>
+<plots/threshL10_2.pdf, id=443, 417.7206pt x 258.0049pt>
 File: plots/threshL10_2.pdf Graphic file (type pdf)
 <use plots/threshL10_2.pdf>
 Package luatex.def Info: plots/threshL10_2.pdf  used on input line 73.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshL20.pdf, id=371, 417.7206pt x 258.0049pt>
+<plots/threshL20.pdf, id=444, 417.7206pt x 258.0049pt>
 File: plots/threshL20.pdf Graphic file (type pdf)
 <use plots/threshL20.pdf>
 Package luatex.def Info: plots/threshL20.pdf  used on input line 78.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshL21.pdf, id=372, 417.7206pt x 258.0049pt>
+<plots/threshL21.pdf, id=445, 417.7206pt x 258.0049pt>
 File: plots/threshL21.pdf Graphic file (type pdf)
 <use plots/threshL21.pdf>
 Package luatex.def Info: plots/threshL21.pdf  used on input line 90.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/threshR21.pdf, id=373, 417.7206pt x 258.0049pt>
+<plots/threshR21.pdf, id=446, 417.7206pt x 258.0049pt>
 File: plots/threshR21.pdf Graphic file (type pdf)
 <use plots/threshR21.pdf>
 Package luatex.def Info: plots/threshR21.pdf  used on input line 95.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-[19
+[22
 
-<./plots/threshR00.pdf><./plots/threshR10_2.pdf>] [20<./plots/threshR01.pdf><./plots/threshR11.pdf><./plots/threshL00.pdf><./plots/threshL10.pdf>] [21<./plots/threshL01.pdf><./plots/threshL11.pdf><./plots/threshL10_2.pdf><./plots/threshL20.pdf>] [22<./plots/threshL21.pdf><./plots/threshR21.pdf>]
+<./plots/threshR00.pdf><./plots/threshR10_2.pdf>] [23<./plots/threshR01.pdf><./plots/threshR11.pdf><./plots/threshL00.pdf><./plots/threshL10.pdf>] [24<./plots/threshL01.pdf><./plots/threshL11.pdf><./plots/threshL10_2.pdf><./plots/threshL20.pdf>] [25<./plots/threshL21.pdf><./plots/threshR21.pdf>]
 Appendix B.
-<plots/tdc0.pdf, id=599, 417.7206pt x 258.0049pt>
+<plots/tdc0.pdf, id=673, 417.7206pt x 258.0049pt>
 File: plots/tdc0.pdf Graphic file (type pdf)
 <use plots/tdc0.pdf>
-Package luatex.def Info: plots/tdc0.pdf  used on input line 109.
+Package luatex.def Info: plots/tdc0.pdf  used on input line 110.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc1.pdf, id=600, 417.7206pt x 258.0049pt>
+<plots/tdc1.pdf, id=674, 417.7206pt x 258.0049pt>
 File: plots/tdc1.pdf Graphic file (type pdf)
 <use plots/tdc1.pdf>
-Package luatex.def Info: plots/tdc1.pdf  used on input line 113.
+Package luatex.def Info: plots/tdc1.pdf  used on input line 114.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc2.pdf, id=601, 417.7206pt x 258.0049pt>
+<plots/tdc2.pdf, id=675, 417.7206pt x 258.0049pt>
 File: plots/tdc2.pdf Graphic file (type pdf)
 <use plots/tdc2.pdf>
-Package luatex.def Info: plots/tdc2.pdf  used on input line 122.
+Package luatex.def Info: plots/tdc2.pdf  used on input line 123.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc3.pdf, id=602, 417.7206pt x 258.0049pt>
+<plots/tdc3.pdf, id=676, 417.7206pt x 258.0049pt>
 File: plots/tdc3.pdf Graphic file (type pdf)
 <use plots/tdc3.pdf>
-Package luatex.def Info: plots/tdc3.pdf  used on input line 126.
+Package luatex.def Info: plots/tdc3.pdf  used on input line 127.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc4.pdf, id=603, 417.7206pt x 258.0049pt>
+<plots/tdc4.pdf, id=677, 417.7206pt x 258.0049pt>
 File: plots/tdc4.pdf Graphic file (type pdf)
 <use plots/tdc4.pdf>
-Package luatex.def Info: plots/tdc4.pdf  used on input line 135.
+Package luatex.def Info: plots/tdc4.pdf  used on input line 136.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc5.pdf, id=604, 417.7206pt x 258.0049pt>
+<plots/tdc5.pdf, id=678, 417.7206pt x 258.0049pt>
 File: plots/tdc5.pdf Graphic file (type pdf)
 <use plots/tdc5.pdf>
-Package luatex.def Info: plots/tdc5.pdf  used on input line 139.
+Package luatex.def Info: plots/tdc5.pdf  used on input line 140.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc6.pdf, id=605, 417.7206pt x 258.0049pt>
+<plots/tdc6.pdf, id=679, 417.7206pt x 258.0049pt>
 File: plots/tdc6.pdf Graphic file (type pdf)
 <use plots/tdc6.pdf>
-Package luatex.def Info: plots/tdc6.pdf  used on input line 148.
+Package luatex.def Info: plots/tdc6.pdf  used on input line 149.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc7.pdf, id=606, 417.7206pt x 258.0049pt>
+<plots/tdc7.pdf, id=680, 417.7206pt x 258.0049pt>
 File: plots/tdc7.pdf Graphic file (type pdf)
 <use plots/tdc7.pdf>
-Package luatex.def Info: plots/tdc7.pdf  used on input line 152.
+Package luatex.def Info: plots/tdc7.pdf  used on input line 153.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc8.pdf, id=607, 417.7206pt x 258.0049pt>
+<plots/tdc8.pdf, id=681, 417.7206pt x 258.0049pt>
 File: plots/tdc8.pdf Graphic file (type pdf)
 <use plots/tdc8.pdf>
-Package luatex.def Info: plots/tdc8.pdf  used on input line 162.
+Package luatex.def Info: plots/tdc8.pdf  used on input line 163.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc9.pdf, id=608, 417.7206pt x 258.0049pt>
+<plots/tdc9.pdf, id=682, 417.7206pt x 258.0049pt>
 File: plots/tdc9.pdf Graphic file (type pdf)
 <use plots/tdc9.pdf>
-Package luatex.def Info: plots/tdc9.pdf  used on input line 166.
+Package luatex.def Info: plots/tdc9.pdf  used on input line 167.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 170.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 170.
-<plots/tdc10.pdf, id=609, 417.7206pt x 258.0049pt>
+<plots/tdc10.pdf, id=683, 417.7206pt x 258.0049pt>
 File: plots/tdc10.pdf Graphic file (type pdf)
 <use plots/tdc10.pdf>
-Package luatex.def Info: plots/tdc10.pdf  used on input line 176.
+Package luatex.def Info: plots/tdc10.pdf  used on input line 177.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc11.pdf, id=610, 417.7206pt x 258.0049pt>
+<plots/tdc11.pdf, id=684, 417.7206pt x 258.0049pt>
 File: plots/tdc11.pdf Graphic file (type pdf)
 <use plots/tdc11.pdf>
-Package luatex.def Info: plots/tdc11.pdf  used on input line 180.
+Package luatex.def Info: plots/tdc11.pdf  used on input line 181.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc12.pdf, id=611, 417.7206pt x 258.0049pt>
+<plots/tdc12.pdf, id=685, 417.7206pt x 258.0049pt>
 File: plots/tdc12.pdf Graphic file (type pdf)
 <use plots/tdc12.pdf>
-Package luatex.def Info: plots/tdc12.pdf  used on input line 190.
+Package luatex.def Info: plots/tdc12.pdf  used on input line 191.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc13.pdf, id=612, 417.7206pt x 258.0049pt>
+<plots/tdc13.pdf, id=686, 417.7206pt x 258.0049pt>
 File: plots/tdc13.pdf Graphic file (type pdf)
 <use plots/tdc13.pdf>
-Package luatex.def Info: plots/tdc13.pdf  used on input line 194.
+Package luatex.def Info: plots/tdc13.pdf  used on input line 195.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc14.pdf, id=613, 417.7206pt x 258.0049pt>
+<plots/tdc14.pdf, id=687, 417.7206pt x 258.0049pt>
 File: plots/tdc14.pdf Graphic file (type pdf)
 <use plots/tdc14.pdf>
-Package luatex.def Info: plots/tdc14.pdf  used on input line 204.
+Package luatex.def Info: plots/tdc14.pdf  used on input line 205.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
-<plots/tdc15.pdf, id=614, 417.7206pt x 258.0049pt>
+<plots/tdc15.pdf, id=688, 417.7206pt x 258.0049pt>
 File: plots/tdc15.pdf Graphic file (type pdf)
 <use plots/tdc15.pdf>
-Package luatex.def Info: plots/tdc15.pdf  used on input line 208.
+Package luatex.def Info: plots/tdc15.pdf  used on input line 209.
 (luatex.def)             Requested size: 215.99808pt x 133.40744pt.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [23
+ [26
 
-<./plots/tdc0.pdf><./plots/tdc1.pdf>] [24<./plots/tdc2.pdf><./plots/tdc3.pdf><./plots/tdc4.pdf><./plots/tdc5.pdf><./plots/tdc6.pdf><./plots/tdc7.pdf>] [25<./plots/tdc8.pdf><./plots/tdc9.pdf><./plots/tdc10.pdf><./plots/tdc11.pdf><./plots/tdc12.pdf><./plots/tdc13.pdf>] [26<./plots/tdc14.pdf><./plots/tdc15.pdf>]
+<./plots/tdc0.pdf><./plots/tdc1.pdf>] [27<./plots/tdc2.pdf><./plots/tdc3.pdf><./plots/tdc4.pdf><./plots/tdc5.pdf><./plots/tdc6.pdf><./plots/tdc7.pdf>] [28<./plots/tdc8.pdf><./plots/tdc9.pdf><./plots/tdc10.pdf><./plots/tdc11.pdf><./plots/tdc12.pdf><./plots/tdc13.pdf>] [29<./plots/tdc14.pdf><./plots/tdc15.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 1820A2BE454E81B9C3C0B7A6574700C0;24720.
+(rerunfilecheck)             Checksum: 08462B7AEFCE21E6DEEAAE48211933A2;28052.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: C2FDEEE6271D299DA0AEA5635C1FE9B4;1493.
+(rerunfilecheck)             Checksum: EA438EC668F7DDDE435C6E54C36A51E3;1581.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 36005 strings out of 481089
+ 36056 strings out of 481089
  125171,1648299 words of node,token memory allocated
- 654 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 19 attribute, 77 glue_spec, 11 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1666,3:255,4:87,5:270,6:74,7:5313,8:56,9:459,10:22,11:298
- 52051 multiletter control sequences out of 65536+600000
- 127 fonts using 42480495 bytes
+ 846 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 6 disc, 2 glue, 4 kern, 7 glyph, 45 attribute, 77 glue_spec, 24 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:2,2:1664,3:258,4:87,5:270,6:74,7:5307,8:56,9:459,10:22,11:292
+ 52079 multiletter control sequences out of 65536+600000
+ 127 fonts using 42479775 bytes
  59i,14n,114p,940b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf>
-Output written on main.pdf (29 pages, 4317637 bytes).
+</home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf>
+Output written on main.pdf (32 pages, 4379801 bytes).
 
-PDF statistics: 1075 PDF objects out of 1200 (max. 8388607)
- 720 compressed objects within 8 object streams
- 80 named destinations out of 1000 (max. 131072)
- 137 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1158 PDF objects out of 1200 (max. 8388607)
+ 786 compressed objects within 8 object streams
+ 91 named destinations out of 1000 (max. 131072)
+ 145 words of extra memory for PDF output out of 10000 (max. 100000000)
 

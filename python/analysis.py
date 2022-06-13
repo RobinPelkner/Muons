@@ -63,6 +63,8 @@ plt.errorbar(
     color='royalblue',
     capsize=3.0
 )
+plt.xlabel(r'Entries')
+plt.ylabel(r'$t / \symup{ns}')
 plt.savefig('plots/p0.pdf')
 plt.clf()
 
@@ -102,6 +104,8 @@ plt.errorbar(
     color='royalblue',
     capsize=3.0
 )
+plt.xlabel(r'Entries')
+plt.ylabel(r'$t / \symup{ns}')
 plt.savefig('plots/p1.pdf')
 plt.clf()
 #P2 Plane
@@ -140,6 +144,8 @@ plt.errorbar(
     color='royalblue',
     capsize=3.0
 )
+plt.xlabel(r'Entries')
+plt.ylabel(r'$t / \symup{ns}')
 plt.savefig('plots/p2.pdf')
 plt.clf()
 #P0+P1+P2
@@ -172,13 +178,13 @@ plt.clf()
 
 print('Test')
 def test(x, a, c, t1, t2):
-    return a *( 1.3 * np.exp(-x/t1) +np.exp(-x/t2)) + c 
+    return a * (1.2 *  np.exp(-x/t1) +  np.exp(-x/t2)) + c 
 number_of_bins = 59
 range_of_bins=(0, 8700)
 ptest, bin_edges, dump = plt.hist(x, bins=number_of_bins, range=range_of_bins, histtype='barstacked', edgecolor='royalblue', color=['lightsteelblue'], stacked=True)
 bin_centers = 0.5*(bin_edges[1:] + bin_edges[:-1])
-popt, cov = curve_fit(test, bin_centers[2:], ptest[2:], sigma=np.sqrt(ptest[2:]), p0=[300, 30, 2000, 200])
-print(chisquare(ptest[2:], f_exp=test(bin_centers[2:], *popt)))
+popt, cov = curve_fit(test, bin_centers, ptest, sigma=np.sqrt(ptest), p0=[300, 30, 2200, 200])
+print(chisquare(ptest, f_exp=test(bin_centers, *popt)))
 print(popt[0], np.sqrt(cov[0][0]))
 print(popt[1], np.sqrt(cov[1][1]))
 print(popt[2], np.sqrt(cov[2][2]))
@@ -186,7 +192,7 @@ print(popt[3], np.sqrt(cov[3][3]))
 x_interval_for_fit = np.linspace(bin_edges[1], bin_edges[-1], 10000)
 
 plt.plot(x_interval_for_fit, test(x_interval_for_fit, *popt), label='Fit', color='orangered')
-plt.plot(x_interval_for_fit[1:], f(x_interval_for_fit[1:], a=popt[1], b=popt[0], tau=popt[3]), color='green', label='Fit for bound Muons')
+#plt.plot(x_interval_for_fit[1:], f(x_interval_for_fit[1:], a=popt[1], b=popt[0], tau=popt[3]), color='green', label='Fit of captured Muons')
 plt.errorbar(
     bin_centers,
     ptest,
@@ -195,7 +201,9 @@ plt.errorbar(
     color='royalblue',
     capsize=3.0
 )
-plt.legend()
+plt.xlabel(r'Entries')
+plt.ylabel(r'$t / \symup{ns}')
+#plt.legend()
 plt.tight_layout()
 plt.savefig('plots/ptest.pdf')
 #df = df.mul(conv)

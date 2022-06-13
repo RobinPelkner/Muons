@@ -42,6 +42,7 @@ build:
 	
 clean:
 	rm -rf build
+	rm -rf plots
 
 FORCE:
 

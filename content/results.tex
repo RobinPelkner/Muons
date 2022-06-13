@@ -1,53 +1,26 @@
 \chapter{Final Results and Conclusions}
 \label{sec:results}
-\section{Analysis of each plane}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{plots/p0.pdf}
-    \caption{Plane 0.}
-    \label{fig:p0}
-\end{figure}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{plots/p1.pdf}
-    \caption{Plane 1.}
-    \label{fig:p1}
-\end{figure}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{plots/p2.pdf}
-    \caption{Plane 2.}
-    \label{fig:p2}
-\end{figure}
-Fit function:
+In this report a platic scintillator made up of three planes in combination with a basic 
+trigger system was used to detect stopping cosmic muons and their lifetime. 
+From the total of 1184834 measured trigger events only 5885 resulting in an efficency value of 
 \begin{equation*}
-    N = a \cdot \exp(- \frac{t}{\tau}) + b
+    \epsilon = \frac{5885}{1184834} \approx 5 \cdot 10^{-3}.
 \end{equation*}
-with N as the number of counts.
-Parameters in Table.
-\input{content/datatable.tex}
-
-\section{All planes}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{plots/pALL.pdf}
-    \caption{All Planes.}
-    \label{fig:pALL}
-\end{figure}
-
-\section{With bound Muons}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{plots/ptest.pdf}
-    \caption{All Planes with bound Muons.}
-    \label{fig:ptest}
-\end{figure}
-
-Parameters:
-\begin{align*}
-    a &= 228 \pm 13 \\
-    b &= 21 \pm 2 \\
-    \tau_{\text{free}} &= 2.1 \pm 0.1 \; \mu s\\
-    \tau_{\text{bound}} &= 0.21 \pm 0.06 \;\mu s
-\end{align*}
+This efficency is far from optimal but was to be expexted given the amount of possible fake signals
+and other background signals. Using the fit on the available data a mean muon lifetime could be 
+estimated as 
+\begin{equation*}
+    \tau = (2.1 \pm 0.1) \; \symup{\mu s}.
+\end{equation*}
+This calculated value deviates $4.4\%$ of the literature value of $\tau_{\text{pdg}} = 2.1969811 \pm 0.0000022$ \cite{pdg}.
+Since the relative deviation is small and the true value well inside the 
+standard deviation and therefore consistent with it, this measurement will be considered succesfull.\\
+Furthermore, an attempt to calculate the lifetime of bound muons in iron was made. 
+The analyisis results in a lifetime of 
+\begin{equation*}
+    \tau_{\text{bound}} = (0.15 \pm 0.04) \; \symup{\mu s},
+\end{equation*}
+which deviates $27.2\%$ of the experimental value of $\tau_{\text{bound}} = 0.206 \;\symup{\mu s}$ \cite{lvd}.
+Since the effect of the decay of captured muons is much smaller than the effect of free 
+muons, more measured events would be needed to improve this measurement to eventually
+become valid and consistent.
