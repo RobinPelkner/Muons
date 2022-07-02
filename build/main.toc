@@ -10,11 +10,11 @@
 \contentsline {section}{\numberline {3.3}Delay Curve}{10}{section.3.3}%
 \contentsline {section}{\numberline {3.4}TDC callibration}{11}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Trigger Logic and Data Taking}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Data Analysis}{14}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Data selection and background}{14}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Fit function}{15}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Fit results}{16}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Decay of captured muons}{18}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Final Results and Conclusions}{20}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Threshold voltages of the PMTs}{22}{appendix.A}%
-\contentsline {chapter}{\numberline {B}TDC calibrations}{26}{appendix.B}%
+\contentsline {chapter}{\numberline {5}Data Analysis}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Data selection and background}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Fit function}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Fit results}{18}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Decay of captured muons}{20}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Final Results and Conclusions}{22}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Threshold voltages of the PMTs}{24}{appendix.A}%
+\contentsline {chapter}{\numberline {B}TDC calibrations}{28}{appendix.B}%

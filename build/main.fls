@@ -426,6 +426,15 @@ INPUT /home/robin/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbo
 INPUT /home/robin/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./content/trigger_and_data.tex
 INPUT ./content/trigger_and_data.tex
+INPUT ./figures/cattura2.png
+INPUT ./figures/cattura2.png
+INPUT ./figures/cattura2.png
+INPUT ./figures/cattura3.png
+INPUT ./figures/cattura3.png
+INPUT ./figures/cattura3.png
+INPUT ./figures/cattura4.png
+INPUT ./figures/cattura4.png
+INPUT ./figures/cattura4.png
 INPUT ./content/data_analysis.tex
 INPUT ./content/data_analysis.tex
 INPUT ./figures/falsestopping.png

@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1655126702 "build/main.bcf" "build/main.bbl" "build/main" 1655126724
-  "build/main.bcf" 1655126723 102042 d3c1e4ff94d54eddb11b2f2847a745d1 "lualatex"
+["biber build/main"] 1655126702 "build/main.bcf" "build/main.bbl" "build/main" 1656778761
+  "build/main.bcf" 1656778760 102042 d3c1e4ff94d54eddb11b2f2847a745d1 "lualatex"
   "lit.bib" 1655126694 2202 320df15f18d96e81464a1dba6e962216 ""
   (generated)
   "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1655126716 "main.tex" "build/main.pdf" "main" 1655126724
+["lualatex"] 1656778750 "main.tex" "build/main.pdf" "main" 1656778761
   "/home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/robin/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf" 1255129361 66268 9cda782e3eb1fe3b50d078d2ea7728b5 ""
@@ -241,10 +241,10 @@
   "/home/robin/.local/texlive/2020/texmf-var/tex/generic/config/language.dat" 1588412069 6633 c1a3fba1b883b51b9509d37b574930d8 ""
   "/home/robin/.local/texlive/2020/texmf-var/web2c/luahbtex/lualatex.fmt" 1588412148 2661637 efbf39eb207e53492fecc2ee630ba529 ""
   "build/../content/treshtable.tex" 1649600070 612 626516132d3ca252cf1ae2fd566c0673 ""
-  "build/main.aux" 1655126723 28052 08462b7aefce21e6deeaae48211933a2 "lualatex"
+  "build/main.aux" 1656778760 28768 f346c0fbd9199738f62df6ff8fe00d4e "lualatex"
   "build/main.bbl" 1655126707 13874 7949259c091ca646b2ccc702b5f2fb71 "biber build/main"
-  "build/main.run.xml" 1655126723 2333 4623153eb1a403dbc354d5e56094ece9 "lualatex"
-  "build/main.toc" 1655126723 1581 ea438ec668f7ddde435c6e54c36a51e3 "lualatex"
+  "build/main.run.xml" 1656778760 2333 4623153eb1a403dbc354d5e56094ece9 "lualatex"
+  "build/main.toc" 1656778760 1581 2413c5b98a9f0dbceb0e89762ab36317 "lualatex"
   "content/abstract.tex" 1655123607 827 1ce5da82ec1a44e3935b771d153ebeec ""
   "content/appendix.tex" 1655049722 9106 8210959477e684e8708b942324d62a66 ""
   "content/data_analysis.tex" 1655126552 9317 c7c162702aa64b021ae2dc7fb436b57e ""
@@ -254,11 +254,14 @@
   "content/results.tex" 1655125042 1540 c96dd1cd36a8226b4896ce2899844916 ""
   "content/setup.tex" 1655037905 6037 2cda6caabe79eb7249d109f99dd82daa ""
   "content/tdc_table.tex" 1655050949 1357 08f211d868231ad4571763de7c438baa ""
-  "content/trigger_and_data.tex" 1649247128 60 0f6fa73fd1453bb9f7c94284e9ae0d8d ""
+  "content/trigger_and_data.tex" 1656778734 3585 71e4435af4dfc84aeef9ec8730f7347f ""
   "figures/11.png" 1649777821 20336 8581372ee475d1a39c71d6967409c0d9 ""
   "figures/22.png" 1649777849 20071 69f3d8b9045c6f77c15156dd33450115 ""
   "figures/33.png" 1649803262 166592 f3e0c4400d7327c41ac1e56c707edb14 ""
   "figures/cascade.png" 1649252625 182834 7d46742a76ca6d74fd24bf930b082b6c ""
+  "figures/cattura2.png" 1656777711 6947 1463553f430ba8c86e25320724305ddf ""
+  "figures/cattura3.png" 1656777708 25285 cf48e0d9a71e144019cf1f33bd4cda72 ""
+  "figures/cattura4.png" 1656777705 34721 3b24870ce218b428895b97f70bf033ad ""
   "figures/electron_escape.png" 1655126100 23950 84ff23ca7b1cd2cae780af19d76c9ac9 ""
   "figures/falsestopping.png" 1655125998 14260 86df57d4db85b09006d48e53ce15c15e ""
   "figures/hv.jpg" 1649607320 1669089 42a6ae8a3c7c040d5544aade562f13a8 ""
@@ -305,9 +308,9 @@
   "plots/threshR20.pdf" 1655037653 12637 3ad546b21813374526232852d80b0484 ""
   "plots/threshR21.pdf" 1655037703 11220 9e262ea83925274ea0f1236bb91bb2ef ""
   (generated)
-  "build/main.run.xml"
   "build/main.aux"
+  "build/main.run.xml"
+  "build/main.toc"
   "build/main.bcf"
   "build/main.pdf"
-  "build/main.toc"
   "build/main.log"
