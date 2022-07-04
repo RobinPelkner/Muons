@@ -37,7 +37,7 @@ that creates a memory location that will be read by the crate, which will give a
 CAMAC module in this way
 \begin{enumerate}
   \item If and only 1 of the clock of the TDC has a stop before the time limit (5$\;\symup{\mu}$s), then a memory location called LAM, is set to 1
-  \item The crate read the memory location of the LAM continuously if it's 1 the create controller stops the reading, the LAM read the measurement and then clear them to start again
+  \item The crate reads the memory location of the LAM continuously; if it is 1 the create controller stops the reading, the LAM reads the measurement and clears them to start again
 \end{enumerate}
  If there is no stopping signal in the 5$\;\symup{\mu}$s time limit, the LAM will never be set to 1, so the crate controller will never stop the measurement and clear the memory leading to the DAQ problem. We can solve this by taking a copy of the start signal, delaying it by 4.7$\;\symup{\mu}$s and connecting it to one of the clocks of the TDC in this way, so we have
 a fake stop that will set the LAM to 1 to prevent the problem. With this in mind, we build the circuit shown in \autoref{fig:daq}.\\
