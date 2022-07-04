@@ -12,6 +12,8 @@ particle crossing the detector. A schematic for the measuring circuit is shown i
     The signal propagation is from left to right starting with the PMTs and their high voltage supply and ending with the scaler.}
     \label{fig:hvscematic}
 \end{figure}
+
+\vskip 0.09 cm
 Only signals measured with both PMTs are taken into account. To determine these coincidences 
 logic signals are needed and for this, discriminators with a threshold of $\SI{40}{mV}$ are used. 
 They convert the analogous signals of each PMTs into NIM standard signals. Using a logic unit module, we get
@@ -20,6 +22,7 @@ last for $\SI{40}{\ns}$ each so the signals do not have to arrive at the same ti
 $\SI{40}{\ns}$ of each other because the muons arrive in the different planes at different times 
 and not necessarily at the same distance from the PMTs. Furthermore, the PMTs may have different
 delay times as well.\\
+\vskip 0.09 cm
 For the measurement, the \texttt{R10B} PMT works on a fixed high voltage of $\SI{775}{V}$ while the high voltage of 
 \texttt{R20A} is varied from $\SI{700}{V}$ to $\SI{900}{V}$. Each measurement lasts $\SI{200}{s}$.
 The taken data is shown in \autoref{fig:hv}. A plateau can be found with $\SI{875}{V}$ corresponding to the middle value 
@@ -28,13 +31,13 @@ PMT is varied in the same range of high voltages. The measurements for this PMT 
 time limitations.
 The central value of the plateau for this PMT is $\SI{825}{V}$.
 Both measurements were also stopped when the PMTs are operating in the discharge region due to the high voltage to avoid damaging the PMTs.\\
-
+\vskip 0.09 cm
 The results are shown in \autoref{fig:hvPMT1} and \autoref{fig:hvPMT2}. All uncertainties are obtained 
 assuming a Poissonian distribution, meaning $\sigma \propto \sqrt{N}$, where $N$ is the number of
 coincidences. Because the output of the high voltage sources can fluctuate, the central values of the plateaus, $\SI{875}{V}$ for the \texttt{R20A} PMT and 
 $\SI{825}{V}$ for the \texttt{R10B} PMT, can be used as the optimal working voltages to ensure
 a voltage output in the region of the plateau.
-
+\vskip 0.09 cm
 \begin{figure}
         \centering
         \begin{subfigure}[b]{0.48\textwidth}
@@ -54,13 +57,17 @@ of the \texttt{R10B} PMT and the \texttt{R20A} PMT.
 The dashed line indicates the central values of each plateau. The striped red areas mark the found plateaus.}
 \label{fig:hv}
 \end{figure}
+
+\vskip 0.09 cm
 \section{Threshold measurements}
 After the optimal working voltages was found, the determination of the optimal threshold voltage of the chosen PMTs started.
 A good determination of the threshold is necessary to suppress electronic noise on the one hand, but also to make sure that real signals are not
 filtered as well on the other hand. So the threshold can neither be too low nor too high.\\
- Similar to the step before, a counting experiment of coincidences concerning the threshold voltages is conducted. This time the circuit arrangement is shown in 
- \autoref{fig:threshold_scematic} is used. The PMTs are powered using the working voltages given 
- in the laboratory as an average optimal working voltage for three PMTs. \\
+\vskip 0.09 cm
+Similar to the step before, a counting experiment of coincidences concerning the threshold voltages is conducted. This time the circuit arrangement is shown in 
+\autoref{fig:threshold_scematic} is used. The PMTs are powered using the working voltages given 
+in the laboratory as an average optimal working voltage for three PMTs. \\
+\vskip 0.09 cm
 \begin{figure}
    \centering
    \includegraphics[width=0.87\textwidth]{figures/thresh.jpg}
@@ -68,6 +75,8 @@ filtered as well on the other hand. So the threshold can neither be too low nor 
    .The signal flows from left to right, starting with the PMTs and Ending with the scaler.}
    \label{fig:threshold_scematic}
 \end{figure}
+
+\vskip 0.09 cm
 In principle, the threshold of the discriminator of one plane is kept fixed at $\SI{15}{mV}$, while 
 the threshold of the other discriminator is being varied from $\SI{5}{mV}$ to $\SI{250}{mV}$ in irregular steps. 
 Using a discriminator and a Fan-in-Fan-out system as shown in \autoref{fig:threshold_scematic}, it is possible to vary the threshold of the discriminators of both PMT planes at the same time. Each counting measurement was conducted in $\SI{60}{s}$.\\ 
