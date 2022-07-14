@@ -387,6 +387,7 @@ INPUT ./content/preliminary.tex
 INPUT ./figures/hv.jpg
 INPUT ./figures/hv.jpg
 INPUT ./figures/hv.jpg
+INPUT /home/robin/.local/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmmono9-regular.luc
 INPUT ./plots/hvR20A.pdf
 INPUT ./plots/hvR20A.pdf
 INPUT ./plots/hvR20A.pdf
@@ -402,7 +403,6 @@ INPUT /home/robin/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbo
 INPUT ./plots/hvR10B.pdf
 INPUT ./plots/hvR10B.pdf
 INPUT ./plots/hvR10B.pdf
-INPUT /home/robin/.local/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmmono9-regular.luc
 INPUT ./figures/thresh.jpg
 INPUT ./figures/thresh.jpg
 INPUT ./figures/thresh.jpg
@@ -415,15 +415,15 @@ INPUT ./plots/threshR20.pdf
 INPUT ./plots/threshR10.pdf
 INPUT ./plots/threshR10.pdf
 INPUT ./plots/threshR10.pdf
-INPUT ./plots/delay.pdf
-INPUT ./plots/delay.pdf
-INPUT ./plots/delay.pdf
-INPUT ./content/tdc_table.tex
-INPUT ./content/tdc_table.tex
 INPUT /home/robin/.local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /home/robin/.local/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmsans9-regular.luc
 INPUT /home/robin/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /home/robin/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT ./plots/delay.pdf
+INPUT ./plots/delay.pdf
+INPUT ./plots/delay.pdf
+INPUT ./content/tdc_table.tex
+INPUT ./content/tdc_table.tex
 INPUT ./content/trigger_and_data.tex
 INPUT ./content/trigger_and_data.tex
 INPUT ./figures/cattura2.png

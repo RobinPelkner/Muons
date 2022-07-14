@@ -1,12 +1,9 @@
 \chapter{Introduction}
-This experiment aims to determine the lifetime of muons. Muons are produced by cosmic ray showers in the higher atmosphere.
+This experiment aims to measure the lifetime of muons. Muons are produced by cosmic ray showers in the higher atmosphere.
 Incoming Protons interact with the atmosphere and produce pions, which can decay into muons that are reaching the surface of the earth. \\
-In this experimental setup, the incoming muons are slowed down and stopped by layers of iron and then detected with plastic scintillators. \\
-This report is structured as follows: in this chapter, an introduction to the physical aspects of muons is given.
-\hyperref[sec:setup]{Chapter~\ref*{sec:setup}} describes the used components and the experimental setup. In \hyperref[sec:prem]{Chapter~\ref*{sec:prem}}
-the preliminary measurements for the calibration of the setup are described and their results are discussed. \hyperref[sec:trigger]{Chapter~\ref*{sec:trigger}} discusses the composition of the experiment and the process of data taking, while \hyperref[sec:data_analysis]{Chapter~\ref*{sec:data_analysis}} presents the data analysis. \hyperref[sec:results]{Chapter~\ref*{sec:results}} concludes this report.
+In our experimental setup, the incoming muons are slowed down and stopped by layers of iron and then detected with plastic
+scintillators. \\
 
-\newpage
 \section{General introduction to muons}
 The standard model of elementary particles differentiates between quarks, leptons, and bosons.
 Quarks, as well as leptons, can be divided into three generations.
@@ -19,28 +16,29 @@ Their mass is $m_{\mu} = \SI{105.6583745 \pm 0.0000024}{\mega\eV}$, which is 206
 
 \section{Muons from cosmic ray showers} 
 Muons are naturally produced in cosmic ray showers.
-The cosmic ray is mostly protons, but also electrons and atomic nuclei.
+The cosmic ray is mostly protons, but also electrons, atomic nuclei and gamma rays.
 These particles originate in various galactic and intergalactic sources like the sun, the Milky Way, and other galaxies.
-When a cosmic particle (e.g; Proton) strikes and interact the atmosphere, it produces a hadronic shower.
+When a cosmic particle (e.g; proton) strikes and interacts the atmosphere, it produces a hadronic shower.
 The protons hadronize mostly into $\pi$ mesons, because they are the lightest mesons, but also into $K$ mesons and other hadrons.
-Due to their short lifetimes, Pions and Kaons also decay into muons via the weak interaction. 
+Due to their short lifetimes, pions and kaons also decay into muons via the weak interaction 
 \begin{align*}
     \pi^{+} &\to \mu^{+} + \nu_{\mu} \\
     \pi^{-} &\to \mu^{-} + \bar{\nu}_{\mu}.
 \end{align*}
-This process is analogous to $K$ mesons.
+This process is analogous for $K$ mesons.
 The muons also only decay via the weak interaction as follows 
 \begin{align*}
     \mu^{-} &\to e^{-} + \bar{\nu}_{e} + {\nu}_{\mu} \\
     \mu^{+} &\to e^{+} + \nu_{e} + \bar{\nu}_{\mu}.
 \end{align*}
-Because the muons have a longer lifetime than pions. Hence, muons can reach the surface of the earth and can be detected through their decay. 
+Because muons have a longer lifetime than pions, muons can reach the surface of the earth and 
+can be detected. 
 A schematic with typical processes, which lead to the production of muons, can be seen in \autoref{fig:cosmic_ray_showers}.
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{figures/cascade.png}
-    \caption{Typical shower processes after an incoming cosmic ray. The primary rays induce secondary particles by scattering with the 
-    molecules of the atmosphere. These secondaries can decay or scatter again with the atmosphere and produce more particles in the process. 
+    \caption{Typical shower processes after an incoming cosmic ray interaction. The primary ray induces secondary particles by interacting with the 
+    molecules of the atmosphere. These secondaries can interact again with the atmosphere and produce more particles in the process. 
     This is called a decay chain or a cosmic ray shower\cite{nasa}.}
     \label{fig:cosmic_ray_showers}
 \end{figure}
@@ -49,7 +47,9 @@ Once they arrive on the surface of earth, we can use experimental apparatus to d
 The basic idea is that when a particle passes through matter they release part of its energy which is converted into new particles or radiation.
 The amount of released energy is described by the Bethe Bloch Formula:\\\\
 \begin{equation*}
--\frac {\symup{d}E}{\symup{d}x} = 2 \pi N_a r_{e}^{2}m_{e}c^{2}\rho \frac{Z}{A} \frac {z^{2}}{\beta^{2}} [ ln(\frac{2m_{e} \gamma^{2} v^{2} W_{max}}{I^{2}}  - 2 \beta^{2} - \delta 2 \frac {C}{Z})]
+    -\frac{\mathrm dE}{\mathrm dx} = 4 \pi N_e r^2_e m_e c^2 \frac{z^2}{\beta^2}\left(\ln{\frac{2m_e c^2\beta^2 \gamma^2}{I}-\beta^2-\frac{\delta(\gamma)}{2}}\right).
 \end{equation*}
 \\
-The transferred energy from the particle to the atom will cause ionization or excitation of scintillating materials which convert these energies into visible lights. Then these visible light signals are converted into the electonic signals using the Photomultiplier tubes.
+The transferred energy from the particle to the atom will cause ionization or excitation 
+of scintillating materials which convert these energies into visible lights. Then these 
+visible light signals are converted into electric signals using the Photomultiplier tubes.

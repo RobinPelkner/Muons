@@ -1,15 +1,16 @@
 \chapter{Preliminary Measurements}
 \label{sec:prem}
-\section{Working Voltage for the Photomultipliers}
+\section{Working Voltage of the Photomultipliers}
 As a first step, the optimal working voltages for the photomultipliers (PMTs) have to be found.
 Two PMTs were chosen for this measurement as a sample from the whole detector, \texttt{R10B} and \texttt{R20A}.
-It is important to choose PMTs from different planes to make sure the measured signal is due to a 
-particle crossing the detector. A schematic for the measuring circuit is shown in \autoref{fig:hvscematic}.\\
+It is helpful to choose PMTs from different planes to make sure the measured signal is due to a 
+particle crossing the detector and not originating in noise.
+A schematic for the measuring circuit is shown in \autoref{fig:hvscematic}.\\
 \begin{figure}
     \centering 
     \includegraphics[width=0.8\textwidth]{figures/hv.jpg}
     \caption{Schematic representation of the coincidence counting circuit for the PMTs. 
-    The signal propagation is from left to right starting with the PMTs and their high voltage supply and ending with the scaler.}
+    The signal propagation is from left to right starting with the high voltage sources of the PMTs and ending with the scaler. In our setup the signals of \texttt{R10B} and \texttt{R20A} were used.}
     \label{fig:hvscematic}
 \end{figure}
 
@@ -20,16 +21,15 @@ They convert the analogous signals of each PMTs into NIM standard signals. Using
 the coincidences from the logic \texttt{AND} of both PMT signals. The NIM signals 
 last for $\SI{40}{\ns}$ each so the signals do not have to arrive at the same time but within 
 $\SI{40}{\ns}$ of each other because the muons arrive in the different planes at different times 
-and not necessarily at the same distance from the PMTs. Furthermore, the PMTs may have different
-delay times as well.\\
+and not necessarily at the same distance from the PMTs.\\
 \vskip 0.09 cm
-For the measurement, the \texttt{R10B} PMT works on a fixed high voltage of $\SI{775}{V}$ while the high voltage of 
+For the measurement, the \texttt{R10B} PMT works at a fixed high voltage of $\SI{775}{V}$ while the high voltage of 
 \texttt{R20A} is varied from $\SI{700}{V}$ to $\SI{900}{V}$. Each measurement lasts $\SI{200}{s}$.
-The taken data is shown in \autoref{fig:hv}. A plateau can be found with $\SI{875}{V}$ corresponding to the middle value 
-of it. This value is used as a fixed value for the \texttt{R20A} PMT when the voltage of the \texttt{R10B}
-PMT is varied in the same range of high voltages. The measurements for this PMT were each taken in $\SI{100}{s}$ due to 
-time limitations.
-The central value of the plateau for this PMT is $\SI{825}{V}$.
+The taken data is shown in \autoref{fig:hv}. The plateau is between $\SI{862}{V}$ 
+and $\SI{887}{V}$ with a
+middle value of $\SI{875}{V}$. This value is used as a fixed value for the \texttt{R20A} PMT when the voltage of the \texttt{R10B}
+PMT is varied in the same range of high voltages. The plateau for this PMT is between $\SI{800}{V}$ and $\SI{850}{V}$
+and the middle value is $\SI{825}{V}$.
 Both measurements were also stopped when the PMTs are operating in the discharge region due to the high voltage to avoid damaging the PMTs.\\
 \vskip 0.09 cm
 The results are shown in \autoref{fig:hvPMT1} and \autoref{fig:hvPMT2}. All uncertainties are obtained 
@@ -52,34 +52,32 @@ a voltage output in the region of the plateau.
         The central value of the plateau is $\SI{825}{V}$.}
         \label{fig:hvPMT2}
 \end{subfigure}
-\caption{Measured number of coincidences regarding varying high voltages
+\caption{Measured number of coincidences as function of high voltages
 of the \texttt{R10B} PMT and the \texttt{R20A} PMT.
 The dashed line indicates the central values of each plateau. The striped red areas mark the found plateaus.}
 \label{fig:hv}
 \end{figure}
 
-\vskip 0.09 cm
-\section{Threshold measurements}
+
+\section{Threshold curves}
 After the optimal working voltages was found, the determination of the optimal threshold voltage of the chosen PMTs started.
-A good determination of the threshold is necessary to suppress electronic noise on the one hand, but also to make sure that real signals are not
+A good determination of the threshold is necessary to suppress noise on the one hand, but also to make sure that real signals are not
 filtered as well on the other hand. So the threshold can neither be too low nor too high.\\
-\vskip 0.09 cm
+
 Similar to the step before, a counting experiment of coincidences concerning the threshold voltages is conducted. This time the circuit arrangement is shown in 
-\autoref{fig:threshold_scematic} is used. The PMTs are powered using the working voltages given 
-in the laboratory as an average optimal working voltage for three PMTs. \\
-\vskip 0.09 cm
+\autoref{fig:threshold_scematic}.
 \begin{figure}
    \centering
    \includegraphics[width=0.87\textwidth]{figures/thresh.jpg}
-   \caption{Schematic representation of the electronic circuit used to find the optimal threshold voltage
-   .The signal flows from left to right, starting with the PMTs and Ending with the scaler.}
+   \caption{Schematic representation of the electronic circuit used to find the optimal threshold voltage.
+   The signal flows from left to right, starting with the PMTs and Ending with the scaler.}
    \label{fig:threshold_scematic}
 \end{figure}
 
-\vskip 0.09 cm
 In principle, the threshold of the discriminator of one plane is kept fixed at $\SI{15}{mV}$, while 
 the threshold of the other discriminator is being varied from $\SI{5}{mV}$ to $\SI{250}{mV}$ in irregular steps. 
-Using a discriminator and a Fan-in-Fan-out system as shown in \autoref{fig:threshold_scematic}, it is possible to vary the threshold of the discriminators of both PMT planes at the same time. Each counting measurement was conducted in $\SI{60}{s}$.\\ 
+Using a discriminator and a Fan-in-Fan-out system as shown in \autoref{fig:threshold_scematic}, it is possible to vary
+the threshold of the discriminators of both PMTs at the same time. Each counting measurement was conducted in $\SI{60}{s}$.\\ 
 The results for the \texttt{R10} and \texttt{R20} planes can be seen in \autoref{fig:threshR10R20}.
 Results from other planes have to be taken from \autoref{sec:appendix}, figures \autoref{fig:appthresh1} to \autoref{fig:appthresh6}.\\
 \input{../content/treshtable.tex}
@@ -89,33 +87,27 @@ Also, a plateau of optimal threshold voltages can be seen. From the middle of th
 has to be chosen as the optimal threshold value. As before the uncertainties will be taken 
 into consideration using the Poissonian error. The optimal threshold voltages of all PMTs are shown in 
 \autoref{tab:thresh}.
-Note that for the \texttt{L10} signals and the \texttt{R10} signals two measurements 
-were taken. Thus, in these cases, only the value from the curve where it is easier to detect
-where the plateau is will be taken into consideration.
-The other values are marked italic in the tabular.
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{plots/threshR20.pdf}
-    \captionof{figure}{Data of the \texttt{R20} PMTs.
-    The central value of the plateau is $\SI{55}{mV}$.}
+    \captionof{figure}{\texttt{R20}}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{plots/threshR10.pdf}
-    \captionof{figure}{Data of the \texttt{R10} PMTs.
-    The central value of the plateau is $\SI{70}{mV}$.}
+    \captionof{figure}{\texttt{R10}.}
 \end{subfigure}
 \caption{Measured number of coincidences concerning varying threshold voltages
 of the \texttt{R10} PMTs and the \texttt{R20} PMTs.
-The dashed line indicates the central values of each plateau. The striped orange areas mark the found plateaus.}
+The dashed line indicates the central values of each plateau. The striped orange areas mark the found plateaus. The central value of the 
+\texttt{R20} PMTs is $\SI{55}{mV}$ and of the \texttt{R10} PMTs it is $\SI{70}{mV}$.}
 \label{fig:threshR10R20}
 \end{figure}
 \section{Delay Curve}
 With systematical variation of the delay between the PMTs \texttt{R10} and \texttt{R20} a delay 
 curve for these PMTs can be created. This delay curve is shown in \autoref{fig:delay}.
 For this measurement delay is added to the signals and the coincidences are counted using scalers in 
-a $60 \; \symup{s}$ timeframe. With the usage of a Fan-In-Fan-Out module the same delay 
-can be applied to both signals at the same time. \\
+$60 \; \symup{s}$. \\
 The delay curve describes the number of coincidences measured for various delays between the PMTs.
 A negative delay time indicates a delay for the signal of \texttt{R10}, while a positive delay 
 represents a delay of the signal of \texttt{R20}. The flanks of the curve can be fitted with linear 
@@ -154,20 +146,18 @@ which is a measure for the resolution of the PMTs.
     \label{fig:delay}
 \end{figure}
 \section{TDC callibration}
-To convert the TDC time units into real time units the various TDC channels have to be callibrated.
+To convert the TDC time units into real time units the various TDC channels have to be calibrated.
 In this step malfunctioning TDC channels can be detected as well. To accomplish this,
-a fake trigger signal is needed at a rate of about $4 \; \symup{Hz}$. A fake signal is used to optimize 
-the shape and the rate for an optimal calibration measurement. The fake signal is generated using the 
+a fake trigger signal is needed at a rate of about $4 \; \symup{Hz}$ or more. The fake signal is generated using the 
 end marker of a dual timer. First, a signal is send to the START of the TDCs. Then this signal is used 
 to create a delayed signal which stops the various channels. The time difference between start and stop signal was measuered with 
-an oscilloscope. To ensure a good calibration, all cables 
-had to be of the exact same length.\\
-For all channels and for each time difference ranging from $0.5 \; \mu s$ to $4.8 \mu s$ 
+an oscilloscope. \\
+For all channels and for each time difference ranging from $0.5 \; \symup{\mu s}$ to $4.8 \; \symup{\mu s}$ 
 at least 200 measurements have been done.
 Special attention had to be given to the TDC channels which generated an overflow (i.e. a value greater than 4095)
 and other anomilies.
-These channels could not be fully used in the data taking since they would provide unreliable
-and incomplete data. Especially the second TDC had problems regarding overflows at times greater than $3 \; \mu s$.\\
+These channels could not be fully in the data taking since they would provide unreliable
+and incomplete data.\\
 For all channels a linear function of the form 
 \begin{equation*}
     \text{TDC Time} = a \cdot t + b
@@ -177,8 +167,10 @@ These are shown for all channels in the figures \ref{fig:tdc01} to
 \ref{fig:tdc1415} in \autoref{sec:tdc_figures}.
 The estimated parameters are shown in \autoref{tab:tdc}. Furthermore, a $\chi^2$-test is conducted 
 for all fits, although it has to be taken into account that for some fits a cut-off due to overflow of
-the time values had to be done. The results of $\chi^2$-test per degree of freedom and the cut-off values 
+the time values had to be done. The results of the reduced $\chi^2$-test and the cut-off values 
 are also shown in the table.\\
+The low values resulting from the tests indicate a good fit of the model to the data, while still being affected by the uncertainties 
+of the measurements. The higher the value is, the lower the model fits the data.
 \input{content/tdc_table.tex}
 With the cut-off of overflow values the $\chi^2$-test values of the fits of all channels are 
 small with the biggest value being produced in channel 2 of TDC 2, which will not be used due to 

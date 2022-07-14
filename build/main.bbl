@@ -18,61 +18,62 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{lvd}{article}{}
+  \datalist[entry]{none/global//global/global}
+    \entry{pdg}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
       \name{author}{1}{}{%
-        {{hash=52db698176ec231488c3a8c636369b48}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           given={N.\bibnamedelimi Agafonova},
-           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod}}}%
+        {{hash=d9d59fd9775540f36a672e46979af983}{%
+           family={Zyla},
+           familyi={Z\bibinitperiod},
+           given={P.A.},
+           giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{52db698176ec231488c3a8c636369b48}
-      \strng{fullhash}{52db698176ec231488c3a8c636369b48}
-      \strng{bibnamehash}{52db698176ec231488c3a8c636369b48}
-      \strng{authorbibnamehash}{52db698176ec231488c3a8c636369b48}
-      \strng{authornamehash}{52db698176ec231488c3a8c636369b48}
-      \strng{authorfullhash}{52db698176ec231488c3a8c636369b48}
-      \field{sortinit}{a}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \strng{namehash}{3252689ea2c95188fe632e638cbb4321}
+      \strng{fullhash}{3252689ea2c95188fe632e638cbb4321}
+      \strng{bibnamehash}{3252689ea2c95188fe632e638cbb4321}
+      \strng{authorbibnamehash}{3252689ea2c95188fe632e638cbb4321}
+      \strng{authornamehash}{3252689ea2c95188fe632e638cbb4321}
+      \strng{authorfullhash}{3252689ea2c95188fe632e638cbb4321}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Book of Abstracts}
-      \field{title}{The muon decay and muon capture detection with LVD}
-      \field{year}{2006}
-      \field{pages}{201}
-      \range{pages}{1}
-    \endentry
-    \entry{bound}{article}{}
-      \name{author}{1}{}{%
-        {{hash=ed9181764646e235f83d88c3db765fd9}{%
-           family={Huff},
-           familyi={H\bibinitperiod},
-           given={Robert\bibnamedelima W},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \strng{namehash}{ed9181764646e235f83d88c3db765fd9}
-      \strng{fullhash}{ed9181764646e235f83d88c3db765fd9}
-      \strng{bibnamehash}{ed9181764646e235f83d88c3db765fd9}
-      \strng{authorbibnamehash}{ed9181764646e235f83d88c3db765fd9}
-      \strng{authornamehash}{ed9181764646e235f83d88c3db765fd9}
-      \strng{authorfullhash}{ed9181764646e235f83d88c3db765fd9}
-      \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annals of Physics}
-      \field{number}{2}
-      \field{title}{Decay rate of bound muons}
-      \field{volume}{16}
-      \field{year}{1961}
-      \field{pages}{288\bibrangedash 317}
-      \range{pages}{30}
+      \field{journaltitle}{PTEP}
+      \field{note}{and 2021 update}
+      \field{number}{8}
+      \field{title}{{Review of Particle Physics}}
+      \field{volume}{2020}
+      \field{year}{2020}
       \verb{doi}
-      \verb https://doi.org/10.1016/0003-4916(61)90039-2
+      \verb 10.1093/ptep/ptaa104
       \endverb
+    \endentry
+    \entry{nasa}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=5117e05e7f6e14f4e8d1aba648758f86}{%
+           family={Wrbanek},
+           familyi={W\bibinitperiod},
+           given={J.D.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4bba39bad7bf87cc337b404487303a1e}{%
+           family={Wrbanek},
+           familyi={W\bibinitperiod},
+           given={S.Y.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f49c8a8038570bf9ea2d3d4c7b190357}
+      \strng{fullhash}{f49c8a8038570bf9ea2d3d4c7b190357}
+      \strng{bibnamehash}{f49c8a8038570bf9ea2d3d4c7b190357}
+      \strng{authorbibnamehash}{f49c8a8038570bf9ea2d3d4c7b190357}
+      \strng{authornamehash}{f49c8a8038570bf9ea2d3d4c7b190357}
+      \strng{authorfullhash}{f49c8a8038570bf9ea2d3d4c7b190357}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Space Radiation and Impact on Instrumentation Technologies}
+      \field{year}{2020}
     \endentry
     \entry{pandas}{software}{}
       \name{author}{1}{}{%
@@ -93,8 +94,8 @@
       \strng{authorbibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
       \strng{authornamehash}{9a1f9219d00cef023c61c6fd71576d04}
       \strng{authorfullhash}{9a1f9219d00cef023c61c6fd71576d04}
-      \field{sortinit}{t}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{2}
@@ -287,8 +288,8 @@
       \strng{authorbibnamehash}{f252038edd7f112d75da3bf0c1edecbc}
       \strng{authornamehash}{f252038edd7f112d75da3bf0c1edecbc}
       \strng{authorfullhash}{371a3f5cdbab4f8c68cab2e17d157950}
-      \field{sortinit}{V}
-      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Methods}
@@ -298,61 +299,60 @@
       \field{pages}{261\bibrangedash 272}
       \range{pages}{12}
     \endentry
-    \entry{nasa}{manual}{}
-      \name{author}{2}{}{%
-        {{hash=5117e05e7f6e14f4e8d1aba648758f86}{%
-           family={Wrbanek},
-           familyi={W\bibinitperiod},
-           given={J.D.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4bba39bad7bf87cc337b404487303a1e}{%
-           family={Wrbanek},
-           familyi={W\bibinitperiod},
-           given={S.Y.},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{f49c8a8038570bf9ea2d3d4c7b190357}
-      \strng{fullhash}{f49c8a8038570bf9ea2d3d4c7b190357}
-      \strng{bibnamehash}{f49c8a8038570bf9ea2d3d4c7b190357}
-      \strng{authorbibnamehash}{f49c8a8038570bf9ea2d3d4c7b190357}
-      \strng{authornamehash}{f49c8a8038570bf9ea2d3d4c7b190357}
-      \strng{authorfullhash}{f49c8a8038570bf9ea2d3d4c7b190357}
-      \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Space Radiation and Impact on Instrumentation Technologies}
-      \field{year}{2020}
-    \endentry
-    \entry{pdg}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
+    \entry{bound}{article}{}
       \name{author}{1}{}{%
-        {{hash=d9d59fd9775540f36a672e46979af983}{%
-           family={Zyla},
-           familyi={Z\bibinitperiod},
-           given={P.A.},
-           giveni={P\bibinitperiod}}}%
+        {{hash=ed9181764646e235f83d88c3db765fd9}{%
+           family={Huff},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
-      \strng{namehash}{3252689ea2c95188fe632e638cbb4321}
-      \strng{fullhash}{3252689ea2c95188fe632e638cbb4321}
-      \strng{bibnamehash}{3252689ea2c95188fe632e638cbb4321}
-      \strng{authorbibnamehash}{3252689ea2c95188fe632e638cbb4321}
-      \strng{authornamehash}{3252689ea2c95188fe632e638cbb4321}
-      \strng{authorfullhash}{3252689ea2c95188fe632e638cbb4321}
-      \field{sortinit}{Z}
-      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \strng{namehash}{ed9181764646e235f83d88c3db765fd9}
+      \strng{fullhash}{ed9181764646e235f83d88c3db765fd9}
+      \strng{bibnamehash}{ed9181764646e235f83d88c3db765fd9}
+      \strng{authorbibnamehash}{ed9181764646e235f83d88c3db765fd9}
+      \strng{authornamehash}{ed9181764646e235f83d88c3db765fd9}
+      \strng{authorfullhash}{ed9181764646e235f83d88c3db765fd9}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{PTEP}
-      \field{note}{and 2021 update}
-      \field{number}{8}
-      \field{title}{{Review of Particle Physics}}
-      \field{volume}{2020}
-      \field{year}{2020}
+      \field{journaltitle}{Annals of Physics}
+      \field{number}{2}
+      \field{title}{Decay rate of bound muons}
+      \field{volume}{16}
+      \field{year}{1961}
+      \field{pages}{288\bibrangedash 317}
+      \range{pages}{30}
       \verb{doi}
-      \verb 10.1093/ptep/ptaa104
+      \verb https://doi.org/10.1016/0003-4916(61)90039-2
       \endverb
+    \endentry
+    \entry{lvd}{article}{}
+      \name{author}{1}{}{%
+        {{hash=52db698176ec231488c3a8c636369b48}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={N.\bibnamedelimi Agafonova},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{52db698176ec231488c3a8c636369b48}
+      \strng{fullhash}{52db698176ec231488c3a8c636369b48}
+      \strng{bibnamehash}{52db698176ec231488c3a8c636369b48}
+      \strng{authorbibnamehash}{52db698176ec231488c3a8c636369b48}
+      \strng{authornamehash}{52db698176ec231488c3a8c636369b48}
+      \strng{authorfullhash}{52db698176ec231488c3a8c636369b48}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Book of Abstracts}
+      \field{title}{The muon decay and muon capture detection with LVD}
+      \field{year}{2006}
+      \field{pages}{201}
+      \range{pages}{1}
     \endentry
   \enddatalist
 \endrefsection

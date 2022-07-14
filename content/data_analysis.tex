@@ -1,10 +1,14 @@
 \chapter{Data Analysis}
 \label{sec:data_analysis}
 \section{Data selection and background}
-The data analysis has conducted using Python 3.7. Since the amount of taken data is high and only a few events have to be selected, the \textit{Pandas} package \cite{pandas} is used to store and handle the data efficiently. \\
+The data analysis has been conducted using Python 3.7. Since the amount of taken data is high 
+and only a few events have to be selected, the \textit{Pandas} package \cite{pandas} is 
+used to store and handle the data efficiently. \\
 
 The selection is necessary due to the low signal rate in comparison to a high background rate.
-Measured trigger signals are not always electron signals from the muon decay. Since, the experimental setup is positioned inside a building and shielded with a block of Iron, most of the signals can assumed to originate from muons, since muons are the most penetrating particles. Still, there can be false signals for a variety of reasons. \\
+Measured trigger signals are not always electron signals from the muon decay.
+Since, the experimental setup is positioned inside a building and shielded with a block of iron,
+ most of the signals can assumed to originate from muons, since muons are the most penetrating particles. Still, there can be false signals for a variety of reasons. \\
 
 As described in \autoref{sec:trigger} when a muon is stopped by the thinner iron block and thus only produces a signal in P0 and P1. Still, depending on the incoming angle of the muon, a muon can be regarded as stopped even though it is not due to the geometry of this experiment, as shown in \autoref{fig:fake}.
 
@@ -15,7 +19,7 @@ As described in \autoref{sec:trigger} when a muon is stopped by the thinner iron
 	 \label{fig:fake}
 \end{figure}
 
-In this case, the time measurement starts without a stopped muon. It can affect the measurement in two different ways: Firstly, no other particle passes and thus, only overflow values are generated. Secondly, a background signal triggers a channel and produces a fake event.\\
+In this case, the time measurement starts without a stopped muon. It can affect the measurement in two different ways: firstly, no other particle passes and thus, only overflow values are generated. Secondly, a background signal triggers a channel and produces a fake event.\\
 
 Another possible reason for the background is the correct detection of a stopping muon. But, the electron is not detected because it leaves the detector or does not have enough energy to leave the iron block. This case has shown in \autoref{fig:escape}. And this again leads either to an overflow value or a fake event because of a background signal.
 
@@ -48,14 +52,16 @@ with the parameter $a$ as a scale factor representing the total amount of partic
 and $b$ representing the constant offset due to background signals. The aim of this analysis is to 
 find the muon mean lifetime $\tau$. To do this the fit function will be applied to the data of the planes 
 using the Python package \textit{scipy} \cite{scipy}.\\
-Furthermore, the first few bins will be excluded from these analysis to reduce the effects of muon capture 
+Furthermore, the data of small timescales ($\approx 200\;$ns) will be excluded from this analysis
+to reduce the effects of muon capture 
 which will be discussed in \autoref{sec:muoncapture}.
 
 \section{Fit results}
 
 At first, all single planes would be analyzed separately after, and all data are taken into account for the final result. All fit results, however, are shown in 
-\autoref{tab:data} for a quick overview of the findings. For this analysis, data from $0 \; \symup{ns}$ to $8700 \; \symup{ns}$ is taken into account.\\
-In the first plane P0, the lowest number of events could be detected which reflects on the resulting lifetime, which is the furthest away from the actual value and has the biggest $\chi^2$-test value.
+\autoref{tab:data} for a quick overview of the findings. For this analysis, 
+decay times up to $8700 \; \symup{ns}$ are taken into account.\\
+In the first plane P0, the lowest number of events could be detected which reflects on the resulting lifetime, which is deviates the most from the actual value and has the biggest $\chi^2$-test value.
 For P0 a total of 48 bins meaning each bin represents $181.25 \; \symup{ns}$, while the fit is conducted in the inverval $725 \; \symup{ns}$ to $8700 \; \symup{ns}$.
 The data and the fitted function for P0 are shown in \autoref{fig:p0}.\\
 \begin{figure}
@@ -110,10 +116,13 @@ The final result is
 
 \label{sec:muoncapture}
 
-Since the muon has, apart from its mass, the same features as an electron, there is a probability for atoms capturing negative muons, which can influence the outcome of this experiment, as discussed before. It affects the decay time of the muon due to quantum mechanic effects: \\
-Since the muon is in a bound state and thus under the influence of binding energy, the phase space for the decay gets reduced. A second effect is the relativistic time dilation due to the orbital movement of the muon. Both of these effects lead to a reduction in the decay rate of the bound state compared to the free state of the muon. A third effect is the Compton effect of the emitted electron, which can (virtually) interact with the atomic nucleus and therefore increases the decay rate of the bound muon compared to free muons. Considering these effects, the decay time for bound muons has to be modified\cite{bound}.\\
+Since the muon has, apart from its mass, the same features as an electron, 
+there is a probability for atoms capturing negative muons, which can influence
+the outcome of this experiment, as discussed before. \\
+Since the muon is in a bound state and thus under the influence of binding energy, 
+the phase space for the decay gets reduced. A second effect is the relativistic time dilation due to the orbital movement of the muon. Both of these effects lead to a reduction in the decay rate of the bound state compared to the free state of the muon. A third effect is the Compton effect of the emitted electron, which can (virtually) interact with the atomic nucleus and therefore increases the decay rate of the bound muon compared to free muons. Considering these effects, the decay time for bound muons has to be modified\cite{bound}.\\
 
-The time interval measured by this experiment also covers the area of times of the decay of captured muonsin iron atoms which is $\tau_{\text{iron}} = 0.206 \; \symup{\mu s}$.
+The time interval measured by this experiment also covers the area of times of the decay of captured muons in iron atoms which is $\tau_{\text{iron}} = 0.206 \; \symup{\mu s}$\cite{lvd}.
 Only negative muons can get captured by the iron atoms. So, for simplicity, these analyses assume that all positive muons decay freely while most negative muons are captured by the material.
 Because of this the fit function \ref{eqn:fit} can be adapted to 
 
