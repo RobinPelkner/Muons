@@ -32,9 +32,9 @@ shown in \autoref{fig:trigger_system}.
 For the time measurement, we use a couple of TDCs in series since we need a least 10$\;\symup{\mu}$s
 and the max time measurable for this TDC is 5$\;\symup{\mu}$s.
 The TDC is controlled by a crate controller that sends the information 
-from the module. The crate controller works with a DAQ code (labVIEW) 
-that creates a memory location that will be read by the crate, which will give a command to the
-CAMAC module in this way
+from the module. The crate controller works with a DAQ code (LabVIEW) 
+that creates a memory location that will be read by the crate and will give a command to the
+CAMAC module
 \begin{enumerate}
   \item If and only 1 of the clock of the TDC has a stop before the time limit (5$\;\symup{\mu}$s), then a memory location called LAM, is set to 1
   \item The crate reads the memory location of the LAM continuously; if it is 1 the create controller stops the reading, the LAM reads the measurement and clears them to start again
