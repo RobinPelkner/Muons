@@ -22,7 +22,7 @@ the coincidences from the logic \texttt{AND} of both PMT signals. The NIM signal
 last for $\SI{40}{\ns}$ each so the signals do not have to arrive at the same time but within 
 $\SI{40}{\ns}$ of each other because the muons arrive in the different planes at different times 
 and not necessarily at the same distance from the PMTs.\\
-\vskip 0.09 cm
+
 For the measurement, the \texttt{R10B} PMT works at a fixed high voltage of $\SI{775}{V}$ while the high voltage of 
 \texttt{R20A} is varied from $\SI{700}{V}$ to $\SI{900}{V}$. Each measurement lasts $\SI{200}{s}$.
 The taken data is shown in \autoref{fig:hv}. The plateau is between $\SI{862}{V}$ 
@@ -31,13 +31,13 @@ middle value of $\SI{875}{V}$. This value is used as a fixed value for the \text
 PMT is varied in the same range of high voltages. The plateau for this PMT is between $\SI{800}{V}$ and $\SI{850}{V}$
 and the middle value is $\SI{825}{V}$.
 Both measurements were also stopped when the PMTs are operating in the discharge region due to the high voltage to avoid damaging the PMTs.\\
-\vskip 0.09 cm
+
 The results are shown in \autoref{fig:hvPMT1} and \autoref{fig:hvPMT2}. All uncertainties are obtained 
 assuming a Poissonian distribution, meaning $\sigma \propto \sqrt{N}$, where $N$ is the number of
 coincidences. Because the output of the high voltage sources can fluctuate, the central values of the plateaus, $\SI{875}{V}$ for the \texttt{R20A} PMT and 
 $\SI{825}{V}$ for the \texttt{R10B} PMT, can be used as the optimal working voltages to ensure
 a voltage output in the region of the plateau.
-\vskip 0.09 cm
+
 \begin{figure}
         \centering
         \begin{subfigure}[b]{0.48\textwidth}
@@ -60,7 +60,7 @@ The dashed line indicates the central values of each plateau. The striped red ar
 
 
 \section{Threshold curves}
-After the optimal working voltages was found, the determination of the optimal threshold voltage of the chosen PMTs started.
+After the optimal working voltages were found, the determination of the optimal threshold voltage of the chosen PMTs started.
 A good determination of the threshold is necessary to suppress noise on the one hand, but also to make sure that real signals are not
 filtered as well on the other hand. So the threshold can neither be too low nor too high.\\
 
@@ -110,39 +110,13 @@ For this measurement delay is added to the signals and the coincidences are coun
 $60 \; \symup{s}$. \\
 The delay curve describes the number of coincidences measured for various delays between the PMTs.
 A negative delay time indicates a delay for the signal of \texttt{R10}, while a positive delay 
-represents a delay of the signal of \texttt{R20}. The flanks of the curve can be fitted with linear 
-functions of the form 
-\begin{equation*}
-    N(\Delta t) = a \cdot \Delta t + b
-\end{equation*}
-with $N$ as the number of coincidences and $\Delta t$ as the delay time. 
-The parameter are 
-\begin{align*}
-    a_{\text{left}} = (64.9 \pm 7.6)\; \symup{\frac{1}{ns}} \qquad
-    b_{\text{left}} = 2328.6 \pm 251.4
-\end{align*} 
-for the left flank from $-36\;\symup{ns}$ to $-25\;\symup{ns}$ and    
-\begin{align*}
-    a_{\text{right}} = (-49.4 \pm 6.3)\; \symup{\frac{1}{ns}} \qquad
-    b_{\text{right}} = 1972.6 \pm 227.3
-\end{align*} 
-for the right flank in the interval $32\;\symup{ns}$ to $40\;\symup{ns}$.
-The plateau between the two flanks has an average value of $343.3 \pm 18.6$. With the estimated 
-parameters and the plateau value the time values of the half maximums are 
-\begin{equation*}
-    \Delta t_{\text{left}} = -33 \pm 5 \qquad
-    \Delta t_{\text{right}} = 36 \pm 7.
-\end{equation*}
-Thus, the full width half maximum can be estimated as 
-\begin{equation*}
-    \Delta t_{\text{FWHM}} = 70 \pm 9
-\end{equation*}
-which is a measure for the resolution of the PMTs.
+represents a delay of the signal of \texttt{R20}. \\
+The curve consists of a plateau with two steep flanks on each side. The plateau ranges from $-31 \; \symup{ns}$ to 
+$33 \; \symup{ns}$ and thus has a width of $64 \; \symup{ns}$. The plateau is also marked in \autoref{fig:delay}.
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{plots/delay.pdf}
-    \caption{Delay Curve between the PMTs \texttt{R10} and \texttt{R20}. The number of coincidences is plotted against the delay between the the PMTs.
-    Furthermore, linear fits of the flanks and the FWHM are plotted.}
+    \includegraphics[width=0.55\textwidth]{plots/delay.pdf}
+    \caption{Delay Curve between the PMTs \texttt{R10} and \texttt{R20}. The number of coincidences is plotted against the delay between the PMTs.}
     \label{fig:delay}
 \end{figure}
 \section{TDC callibration}
@@ -170,13 +144,13 @@ for all fits, although it has to be taken into account that for some fits a cut-
 the time values had to be done. The results of the reduced $\chi^2$-test and the cut-off values 
 are also shown in the table.\\
 The low values resulting from the tests indicate a good fit of the model to the data, while still being affected by the uncertainties 
-of the measurements. The higher the value is, the lower the model fits the data.
+of the measurements. The higher the value is, the less the model fits the data.
 \input{content/tdc_table.tex}
 With the cut-off of overflow values the $\chi^2$-test values of the fits of all channels are 
 small with the biggest value being produced in channel 2 of TDC 2, which will not be used due to 
 its cut-off anyway. Thus, the fits can be consired succesfull. 
 For the data aquisition the channels 3, 4, 5 and 6 of both TDCs have been chosen.
-In the data analysis both parameter will be used to convert the TDC times into real times although the 
+In the data analysis both parameters will be used to convert the TDC times into real times despite the 
 offset $b$ being small in comparison to the common TDC times ranging from 0 to 4095.
 
 

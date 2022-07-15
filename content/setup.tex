@@ -1,17 +1,19 @@
 \chapter{Experimental Setup}
 \label{sec:setup}
-	In our experiment, we are detecting, mostly cosmic muons slowed by iron block ($26\;$cm thick),
-	using three layers of plastic scintillators (P0, P1 and P2) coupled to photo multipliers tubes (PMTs) each via a light guide as shown in figures 2.1 and 2.2.
-	Due to the mechanisms of energy loss, from Bethe-Bloch formula, the minimum energy needed by muons to pass through 
+	In our experiment, we are detecting, mostly cosmic muons slowed by an iron block ($26\;$cm thick),
+	using three layers of plastic scintillators (P0, P1 and P2) coupled to photo multiplier tubes (PMTs) 
+	each via a light guide as shown in \autoref{fig:Scintillators_Detectors} and \autoref{fig:Setup}.
+	Due to the mechanisms of energy loss, from the Bethe-Bloch formula, the minimum energy needed by muons to pass through 
 	$26\;$cm of iron is $E_{\mu} \approx 380 \; \symup{MeV}$ (considering muons at the minimum of ionization energy).
 	 Moreover, the block of iron reduces the electromagnetic component of the cosmic rays.
 	The incoming muons are detected by the counters P0 and P1.
 	During the passage, these charged muons excite the vibrational motion of the molecules which, when de-energized, 
-	emit visible light photons  (~1 photon for every $100\;$eV deposited). Those photons are collected by the PMTs, which
+	emit visible light photons (\textasciitilde 1 photon for every $100\;$eV deposited). Those photons are collected by the PMTs, which
 	produce a proportional amount of electrons that form the electrical pulse we measure.
 	To maximize the numbers of photons that reach the photocathode of the PMTs, it is 
-	necessary that the scintillator and the light guide are wrapped in reflective foil. Also, to block
-	external light the assembly is then covered by black tape.
+	necessary that the scintillator and the light guide are wrapped in reflective foil. Also, 
+	to block
+	external light, the assembly is then covered by black tape.
 	After P1, the muons encounter a slab of iron in which some of them eventually stop and decay. If it happens,
 	the emitted electron or positron can be detected by the surrounding counters. Therefore,
 	what we would like to measure is the time interval between the signal for a stopped muon (’$\mu$ stop’) and the
@@ -46,7 +48,7 @@
     then a LOGIC 1 signal is produced as output. If the signal is lower than the threshold,
     a LOGIC 0 is generated. The Standard LOGIC used by this module is the Nuclear Instrument
     Module Logic (NIM).
-	\vskip 0.09 cm
+	\newpage
 	\textbf{Logic Unit}:\\ CAEN N405 3-fold logic unit module having 3 independent sections to
     perform logic AND/OR up to 4 logic signals in input.\\
 	It provides 1 linear OUT (width of the signals depending on input signals superposition),
@@ -63,12 +65,22 @@
 	Count 4 NIM or TTL level signals for a given time interval deﬁned by the user.
     	\vskip 0.09 cm
 	\textbf{Dual Timer:}\\ CEAN N93B Dual Timer module\\
-	This NIM module housing two identical triggered pulse generators which produce NIM and ECL pulses whose width ranges from 50 ns to 10 s when 	triggered. Output pulses are provided normal and complementary. Timers can be re-triggered with the pulse end marker signal.
+	This NIM module housing two identical triggered pulse generators which produce NIM and
+	ECL pulses whose width ranges from 50\;ns to 10\;s when triggered. Output pulses are 
+	provided normal and complementary. Timers can be re-triggered with the pulse end marker 
+	signal.
 	
 	\vskip 0.09 cm
 	\textbf{Dual Delay:} \\CEAN N108A Dula delay module\\
-	Delay ranges from 0 to 63.5 ns (+ 1.6 ns offset) per section. The delay can be set in 0.5 ns steps. The delay lines are made up of calibrated coaxial cable stubs for high accuracy delay and do not require power supply.
+	Delay ranges from 0 to 63.5\;ns (+1.6\;ns offset) per section. The delay can be set 
+	in 0.5\;ns steps. The delay lines are made up of calibrated coaxial cable stubs for high
+	accuracy delay and do not require power supply.
 	
 	\vskip 0.09 cm
 	\textbf{TDC:} \\CAEN mod. C414\\
-	A single width CAMAC unit housing 8 independent 12 bit time-to-digital conversion channels. The full scale time can be selected from 100 ns to 5 μs via internal DIP switches. The time resolution ranges from 25 ps to 1.25 ns (respectively for 100 ns and 5 μs full scale time range). The conversion time is 2.5 μs per channel and it is reduced to 1.5 μs for overflow channels. A CAMAC LAM is generated (if enabled) at the end of the conversion.
+	A single width CAMAC unit housing 8 independent 12 bit time-to-digital conversion channels.
+	The full scale time can be selected from 100\;ns to 5\;$\symup{\mu s}$ via internal
+	DIP switches. The time resolution ranges from 25\;ps to 1.25\;ns (respectively for 100\;ns
+	and 5\;$\symup{\mu s}$ full scale time range). The conversion time is 2.5\;$\symup{\mu s}$
+	per channel and it is reduced to 1.5\;$\symup{\mu s}$ for overflow channels.
+	A CAMAC LAM is generated (if enabled) at the end of the conversion.

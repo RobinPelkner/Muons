@@ -28,7 +28,7 @@ def f(x, a, b, tau):
 #P0 Plane
 
 p01 = df.drop(df[(df['chan3'] ==4095)].index)
-p01 = p01.drop(p01[(p01['chan4'] !=4095) | (p01['chan5'] !=4095) | (p01['chan11'] !=4095) | (p01['chan12'] !=4095) | (p01['chan13'] !=4095)].index)
+p01 = p01.drop(p01[ (p01['chan5'] !=4095) | (p01['chan11'] !=4095) | (p01['chan12'] !=4095) | (p01['chan13'] !=4095)].index)
 p02 = df.drop(df[(df['chan11'] ==4095)].index)
 p02 = p02.drop(p02[(p02['chan4'] !=4095) | (p02['chan5'] !=4095) | (p02['chan3'] !=4095) | (p02['chan12'] !=4095) | (p02['chan13'] !=4095)].index)
 p02 = p02.sub(offset)
@@ -37,23 +37,23 @@ p02['chan11'] = p02['chan11'] + p02['chan6']
 p01 = p01.sub(offset)
 p01 = p01.div(conv)
 #Checking for events in both tdc at the "same" time; there are none
-#c = df.drop(df[(df['chan3'] ==4095) | (df['chan11'] ==4095) ].index)
-#print(c.head())
+c = df.drop(df[(df['chan3'] ==4095) | (df['chan11'] ==4095) ].index)
+print(c.head())
 range_of_bins = (0, 8700)
-number_of_bins = 48
+number_of_bins = 52
 x = p01['chan3']
 x = x.append(p02['chan11'])
 print(x.shape)
 p0, bin_edges, dump = plt.hist(x, bins=number_of_bins, range=range_of_bins, histtype='barstacked', edgecolor='royalblue', color=['lightsteelblue'])
 #print('P0', bin_edges)
 bin_centers = 0.5*(bin_edges[1:] + bin_edges[:-1])
-popt, cov = curve_fit(f, bin_centers[4:], p0[4:], p0=[3, 100, 2000])
-print(chisquare(p0[4:], f_exp=f(bin_centers[4:], *popt)))
+popt, cov = curve_fit(f, bin_centers[3:], p0[3:], p0=[3, 100, 2000])
+print(chisquare(p0[3:], f_exp=f(bin_centers[3:], *popt)))
 print('P0')
 print(popt[0], np.sqrt(cov[0][0]))
 print(popt[1], np.sqrt(cov[1][1]))
 print(popt[2], np.sqrt(cov[2][2]))
-x_interval_for_fit = np.linspace(bin_edges[4], bin_edges[-1], 10000)
+x_interval_for_fit = np.linspace(bin_edges[3], bin_edges[-1], 10000)
 plt.plot(x_interval_for_fit, f(x_interval_for_fit, *popt), label='fit', color='orangered')
 plt.errorbar(
     bin_centers,
