@@ -1,10 +1,10 @@
 # Muons
-Report on the experiment regarding the Lifetime of Muons at UniBo.
+## Report on the experiment regarding the Lifetime of Muons at UniBo.
 
-HOW TO COMPILE:
-Im using LUALATEX;
-Just use MAKE to compile automated
-The Latex file can also be compiled with:
+HOW TO COMPILE:\n
+Im using LUALATEX; \n
+Just use MAKE to compile automatically \n
+The Latex file can also be compiled with: \\n
 
 latexmk \
 	  --lualatex \
